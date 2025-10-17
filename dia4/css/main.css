@@ -1,0 +1,40 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   background-color: aquamarine;
+   display:inline
+
+}
+span {
+   background-color: blue;
+   display: block
+}
+
+.container2{
+   background-color: brown;
+}
+
+.container3{
+   background-color: chocolate;
+}
+.container4{
+   background-color: coral;
+   height: auto;
+   width: 50em;
+   display: none;
+}
+.container5{
+   background-color: blueviolet;
+   height: 10em;
+   width: 10em;
+
+}
+.container6{
+   background-color: darkkhaki;
+   height: 10em;
+   width: 10em;
+}
