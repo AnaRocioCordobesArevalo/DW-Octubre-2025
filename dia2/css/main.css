@@ -1,0 +1,65 @@
+
+
+*{
+    margin: 50 px;
+    padding: 100;
+    box-sizing: border-box;
+    
+}
+
+body{
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2,h3,h4,h5,h6{
+    margin: 20px 0;
+    padding: 30 px;
+    text-align: center;
+    
+}
+
+img {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+}
+
+div p {
+    background-color: rgb(160, 197, 197);
+    padding: 50px;
+}
+
+
+table{
+    padding: 50px;
+    border-style: dashed;
+    width: 100%;
+    background-color: rgb(161, 184, 176);
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border-spacing: 0 ;
+}
+
+.hover:hover{
+    background-color: aquamarine;
+}
+
+.container{
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.container:nth-child(1){
+    background-color: beige;
+}
+.container:nth-child(2){
+    background-color: blueviolet;
+}
+.container:nth-child(3){
+    background-color: rgb(216, 113, 187);
+}

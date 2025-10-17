@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgb(119, 119, 160);
+    background-color: rgb(66, 110, 222);
+    margin: 25%
+}
+
+.container>div{
+    height: 125px;
+    width: 125px;
+    border: 2px solid rgb(177, 39, 39);
+    background-color: rgb(201, 81, 81);
+    margin: 26%
+}
+.container>div> div{
+    height: 62.5px;
+    width: 62.5px;
+    border: 2px solid rgb(177, 39, 39);
+    background-color: rgb(215, 150, 53);
+    margin: 25%
+}
+
