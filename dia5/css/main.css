@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    color: yellow;
+    color: rgb(110, 91, 219);
 }
 
 .logo {
@@ -60,10 +60,6 @@ main {
     gap: 60px;
 }
 
-h2{
-    padding: 20px;
-    margin: 20px;
-}
 
 .container1,
 .container2 {
