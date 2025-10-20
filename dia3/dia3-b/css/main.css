@@ -32,10 +32,38 @@ a:hover{
     text-decoration: underline;
 }
 main{
+    width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+h2{
+    text-align: center;
 }
 
-section{
-    margin:20px;
+p{
+    margin:25px;
+    margin: 20px;
+    text-align: justify;
+}
+.centrar{
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    width: auto;
+}
+.container2{
+    width: 80%;
+    margin: 100px auto;
+    padding: 100px;
+}
+.centrar2{
+    display: block;
+    margin: 100px auto;
+    height: 300px;
+    width: auto;
 }
