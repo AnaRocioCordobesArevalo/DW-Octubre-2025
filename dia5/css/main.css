@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color:#b02626;
     color: white;
     flex-wrap: wrap;
 }
@@ -60,9 +60,15 @@ main {
     gap: 60px;
 }
 
+.span1{
+    
+    font-weight: bold;
+}
+
 
 .container1,
-.container2 {
+.container2,
+.container3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -72,7 +78,8 @@ main {
 }
 
 .container1 p,
-.container2 p {
+.container2 p,
+.container3 p {
     flex: 1 1 300px;
     max-width: 600px;
     text-align: justify;
@@ -89,6 +96,10 @@ main {
     align-items: center;
     flex-wrap: wrap;
 }
+.images3{
+    align-items: center;
+    border-radius: 200px;
+}
 
 .images1 img,
 .images2 img {
@@ -103,7 +114,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #222;
+    background-color: #b02626;
     color: white;
     padding: 30px 20px;
     gap: 15px;
@@ -125,7 +136,7 @@ footer p {
     font-size: 0.9em;
 }
 
-/* === RESPONSIVE DESIGN === */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
