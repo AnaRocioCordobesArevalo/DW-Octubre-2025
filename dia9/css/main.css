@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nivel 1  */  
+                                /* pone el body -- display: flex para que se haga el giro */
+body{
+    display: flex;
+}
+.main__div--nivel1{
+    
+    border: 2px solid rgb(119, 119, 160);
+    background-color: rgb(66, 110, 222);
+    width: 50vw;
+    height: 50vh;
+    
+}
+
+.main__div--nivel2--a{
+    border: 2px solid coral;
+    background-color: rgb(97, 224, 109);
+    width: 50vh;
+    height: 50vw;
+}
+.main__div--nivel2--b{
+    border: 2px solid rgb(191, 81, 38);
+    background-color: rgb(220, 218, 84);
+    width: 20em;
+    height: 20em;
+    
+    print-color-adjust: exact;
+}
+/* Nivel 2  */
+
+@media (max-width: 480px ){
+    .main__div--nivel2--b{
+        background-color: red;
+    }
+}
+@media (min-width: 480px) and (max-width: 780px){
+    .main__div--nivel2--b{
+        background-color: yellow;
+    }
+}
+@media(min-width: 780px) and (max-width: 1200px){
+    .main__div--nivel2--b{
+        background-color: green;
+    }
+}
+
+/* Nivel 3  */
+.container{
+    width: min (90wh, 800px);
+    container-type: size;
+    margin-top: max (50px, 10vx);
+}
+.container__object--nivel3{
+    display: flex;
+    width:100%;
+}
+.container__items--nivel3{
+    background-color: blue;
+    border-radius: 5px;
+    font-size: clamp ( 1rem ,3vw, 3rem);
+}
+
+@container (max-width:400px){
+    .container__object--nivel3{
+        flex-direction: column;
+    }
+}   
+
+/* Extra */
+
+@media (orientation: landscape){
+    body{
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body{
+        flex-direction: column;
+    }
+}
