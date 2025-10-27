@@ -30,6 +30,7 @@ a{
 }
 a:hover{
     text-decoration: underline;
+    color:aquamarine;
 }
 main{
     width: 80%;
@@ -55,15 +56,33 @@ p{
     margin: 0 auto;
     height: 400px;
     width: auto;
+    border-radius: 5%;
 }
 .container2{
     width: 80%;
     margin: 100px auto;
     padding: 100px;
+    
 }
 .centrar2{
     display: block;
     margin: 100px auto;
     height: 300px;
     width: auto;
+    border-radius: 5%;
+}
+
+.centrar3{
+    display: block;
+    margin: 100px auto;
+    height: 500px;
+    width: auto;
+    border-radius: 5%;
+}
+footer{
+    background-color: #333;
+    align-self: center;
+    color: white;
+    padding: 25 px 0;
+    text-align: center;
 }

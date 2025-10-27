@@ -29,6 +29,7 @@ h1, h2,h3,h4,h5,h6{
     text-align: center;
     
 }
+/* Div 2*/
 .container2{
     width: 80%;
     margin: 20px auto;
@@ -61,7 +62,7 @@ img {
 
 
 table{
-    padding: 50px;
+    padding: 10px;
     border-style: dashed;
     width: 100%;
     background-color: rgb(107, 194, 160);

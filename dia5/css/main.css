@@ -40,6 +40,7 @@ nav a {
     color: white;
     font-weight: bold;
     transition: color 0.3s;
+    padding: 5px 10px
 }
 
 nav a:hover {
@@ -96,10 +97,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
 }
-.images3{
-    align-items: center;
-    border-radius: 200px;
-}
+
 
 .images1 img,
 .images2 img {
@@ -125,6 +123,7 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
     font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px
 }
 
 footer a:hover {

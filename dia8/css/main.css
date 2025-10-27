@@ -11,26 +11,27 @@ main {
     margin: auto;
 }
 
+/* Header  */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color:#b02626;
+    background-color: #b02626;
     color: white;
     flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
 header h1 {
     margin: 0;
-    flex-grow: 1;
-    text-align: center;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    /* Espacio entre los enlaces */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -40,18 +41,34 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    /* Padding de enlaces (Nivel 2) */
+    border-radius: 4px;
 }
 
 nav a:hover {
-    color: rgb(110, 91, 219);
+    color: #b02626;
+    background-color: rgba(255, 255, 255, 0.9);
 }
+
+/* Nivel 3: Destacar enlace activo */
+nav a.activo {
+    color: white;
+    /* Color de texto blanco */
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    /* Subrayado blanco para destacar el activo */
+}
+
+
 
 .logo {
     width: 60px;
     height: auto;
 }
 
+/* Main */
 
 main {
     background-color: #f9f9f9;
@@ -61,31 +78,33 @@ main {
     gap: 60px;
 }
 
-.span1{
-    
+.span1 {
     font-weight: bold;
 }
 
-
 .container1,
 .container2,
-.container3 {
+.container3,
+.container4,
+.container5,
+.container6{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
-    
     align-items: center;
 }
 
 .container1 p,
 .container2 p,
-.container3 p {
+.container3 p,
+.container4 p,
+.container5 p,
+.container6 p {
     flex: 1 1 300px;
     max-width: 600px;
     text-align: justify;
     line-height: 1.6;
-    align-content: center;
     font-family: 'Lato', sans-serif;
 }
 
@@ -97,10 +116,6 @@ main {
     align-items: center;
     flex-wrap: wrap;
 }
-.images3{
-    align-items: center;
-    border-radius: 200px;
-}
 
 .images1 img,
 .images2 img {
@@ -110,17 +125,30 @@ main {
     border-radius: 10px;
 }
 
-.enlace{
-    color:rgb(176, 41, 52)
-    
-    
+.imagen-destacada {
+    border: 3px solid rgb(110, 91, 219);
+    box-shadow: 0 0 10px rgba(110, 91, 219, 0.5);
 }
 
-.enlace:hover{
+.enlace {
+    color: rgb(176, 41, 52);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.enlace:hover {
     background-color: rgb(166, 98, 107);
     color: white;
 }
 
+.container2 iframe {
+    /* Añade algo de margen debajo del mapa */
+    margin-bottom: 20px; 
+    /* Si quieres un borde */
+    border: 1px solid #ccc !important;
+}
+
+/* Footer  */
 
 footer {
     display: flex;
@@ -141,13 +169,18 @@ footer a {
 
 footer a:hover {
     color: lightblue;
-    
+}
+
+.enlace-footer {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 footer p {
     margin-top: 10px;
     font-size: 0.9em;
 }
+
 
 
 @media (max-width: 768px) {
@@ -163,68 +196,5 @@ footer p {
         gap: 10px;
     }
 
-    .container1,
-    .container2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .images1 img,
-    .images2 img {
-        width: 90%;
-    }
-}
-
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #b02626;
-    color: white;
-    padding: 30px 20px;
-    gap: 15px;
-}
-
-footer a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-footer a:hover {
-    color: lightblue;
-    
-}
-
-footer p {
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .container1,
-    .container2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .images1 img,
-    .images2 img {
-        width: 90%;
-    }
+    /* ... el resto de las reglas responsivas ... */
 }
