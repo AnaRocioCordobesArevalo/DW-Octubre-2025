@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Nivel 1  */
+.container__h1{
+    background-color: cadetblue;
+    font-size: calc (2vw+ 10px);
+    margin-bottom: 5vh;
+}
+.container__h2{
+    background-color: coral;
+    font-size: 2em;
+
+}
+.container_object_nivel1a{
+    background-color: burlywood;
+    width: 20px;
+    font-size: 20px;
+
+}
+.container_object_item{
+    background-color: rgb(170, 103, 148);
+    font-size: 5em;
+    width: 90%;
+
+}
+.container_object_nivel1b{
+    width: 50vw;
+    padding: calc (2 rem 5 px);
+    background-color: lightgreen;
+}
+.parrafo-rem{
+    font-size: 1.5rem;
+}
+.container_object__buttom{
+    padding: 10px;
+    width: 50%;
+    font-size: 1rem;
+}
+
+/* Nivel 2  */
+
+.container_object_nivel1b{
+    max-width: 60vh;
+    line-height: 1.6em;
+}
+
