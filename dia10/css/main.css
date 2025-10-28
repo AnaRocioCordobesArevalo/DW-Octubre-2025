@@ -28,11 +28,12 @@
 }
 .container_object_nivel1b{
     width: 50vw;
-    padding: calc (2 rem 5 px);
+    padding: calc (2 rem + 5 px);
     background-color: lightgreen;
 }
 .parrafo-rem{
-    font-size: 1.5rem;
+    max-width: 60vh;
+    font-size: 1.6em;
 }
 .container_object__buttom{
     padding: 10px;
@@ -47,3 +48,13 @@
     line-height: 1.6em;
 }
 
+.p_rem_nivel1 {
+    font-size: 1.5rem;
+}
+.container__h1.h1_vw_test{
+    font-size: 5vw;
+}
+
+.p_prueba_vh{
+    font-size: 2vh;
+}
