@@ -29,3 +29,33 @@
     
 }
 
+.menu-fijo {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    z-index: 1000; 
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contenedor-absoluto {
+    /* El padre debe tener position: relative para que el hijo absoluto se posicione respecto a él */
+    position: relative;
+    height: 150px; /* Altura para ver el efecto */
+    background-color: #fce4ec;
+    border-color: #e91e63;
+    width: 80%;
+}
+
+.div-esquina-derecha {
+    position: absolute;
+    top: 0;    /* Se pega al borde superior del padre */
+    right: 0;  /* Se pega al borde derecho del padre */
+    background-color: #f3e5f5;
+    border-color: #9c27b0;
+    width: 180px;
+}
