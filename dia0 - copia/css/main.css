@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos en línea para el contenido de prueba */
+        body { margin: 0; font-family: sans-serif; height: 2000px; }
+        p { margin-top: 100px; padding: 20px; }
+
+/* --- Estilos Generales para Visibilidad --- */
+div {
+    background-color: #e0f7fa; /* Un color de fondo suave */
+    border: 1px solid #00bcd4; /* Un borde para distinguirlo */
+    padding: 10px;
+    margin-bottom: 20px; /* Separación entre elementos */
+}
+
+/* --- Nivel 1: Posicionamiento Básico --- */
+
+/* 1. position: relative (Mover 20px a la derecha y 10px hacia abajo) */
+.div-relative {
+    position: relative; /* Establece el contexto de movimiento */
+    left: 20px;
+    top: 10px;
+    background-color: #fffde7;
+    border-color: #ffeb3b;
+    width: 250px;
+}
+
+/* 2. Posicionar en la esquina superior derecha (position: absolute) */
+.contenedor-absoluto {
+    /* El padre debe tener position: relative para que el hijo absoluto se posicione respecto a él */
+    position: relative;
+    height: 150px; /* Altura para ver el efecto */
+    background-color: #fce4ec;
+    border-color: #e91e63;
+    width: 80%;
+}
+
+.div-esquina-derecha {
+    position: absolute;
+    top: 0;    /* Se pega al borde superior del padre */
+    right: 0;  /* Se pega al borde derecho del padre */
+    background-color: #f3e5f5;
+    border-color: #9c27b0;
+    width: 180px;
+}
+
+/* --- Nivel 2: Menú Fijo y Elementos Pegajosos --- */
+
+/* 1. Menú Fijo (position: fixed) */
+.menu-fijo {
+    position: fixed; /* Mantiene el elemento fijo en la ventana del navegador */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* 2. Encabezado Pegajoso (position: sticky) */
+.encabezado-pegajoso {
+    position: sticky; /* Se comporta como relative hasta que alcanza el punto de desplazamiento */
+    top: 100px; /* Se detiene a 100px del borde superior del viewport */
+    background-color: #8bc34a;
+    color: white;
+    padding: 15px;
+    margin-top: 60px; /* Espacio debajo del menú fijo */
+    z-index: 500;
+    text-align: center;
+}
+
+/* --- Nivel 3: Posicionamiento Avanzado --- */
+
+/* 1. Centrado con position: absolute y transform: translate() */
+.contenedor-centrado-absolute {
+    position: relative;
+    height: 200px;
+    background-color: #e8eaf6;
+    border-color: #3f51b5;
+    width: 400px;
+}
+
+.div-centrado-absolute-transform {
+    position: absolute;
+    top: 50%; /* Mueve el borde superior al 50% del padre */
+    left: 50%; /* Mueve el borde izquierdo al 50% del padre */
+    /* Mueve el elemento hacia atrás la mitad de su propio ancho y alto para el centrado real */
+    transform: translate(-50%, -50%);
+    background-color: #bbdefb;
+    border-color: #2196f3;
+    width: 150px;
+    text-align: center;
+}
+
+/* 2. Centrado con margin: 0 auto (horizontal) */
+.div-centrado-margin {
+    width: 300px; /* **Debe** tener un ancho definido */
+    margin: 0 auto; /* Centra horizontalmente el bloque dentro de su contenedor */
+    background-color: #ffe0b2;
+    border-color: #ff9800;
+    text-align: center;
+}
