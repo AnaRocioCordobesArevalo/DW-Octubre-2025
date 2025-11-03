@@ -1,7 +1,17 @@
+@font-face {
+    font-family: 'Bellota';
+    src: url(../font/Bellota-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+    .p{
+        font-family: 'Bellota';
+        font-weight: bold;
+    }
 
