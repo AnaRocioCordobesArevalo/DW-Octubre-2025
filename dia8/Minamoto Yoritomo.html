@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
-    <title> Page </title>
+    <title> Minamoto Yoritomo</title>
     <meta name='viewport' content='width=device-width, initial'>
     <link rel='icon' type='image/png' href='images/favicon.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
@@ -14,22 +14,26 @@
 </head>
 
 <body>
-    <header>
-        <h1>Destinos en Japón</h1>
-        <nav>
-            <ul> 
-                <li><a href='index.html'>Inicio</a></li>
-                <li><a href='libros.html'>Libros</a></li>
-                <li><a href='destinos.html' class="activo">Destinos</a></li>
-                <li><a href='#'>Cursos</a></li>
+    <header class="header">
+        <h1 class="header__tittle">Minamoto Yoritomo</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item"><a href='index.html'>Inicio</a></li>
+                <li class="header__nav-list-item"><a href='libros.html'>Libros</a></li>
+                <li class="header__nav-list-item"><a href='destinos.html'
+                        class="header__nav-link header__nav-link--active">Destinos</a></li>
+                <li class="header__nav-list-item"><a href='#' class="header__nav-link">Cursos</a></li>
             </ul>
         </nav>
         <img src="imagesfavicon.png/png-transparent-japan-daruma-doll-decal-sticker-japan-logo-vertebrate-head-removebg-preview.png"
-            alt="Icono Daruma" class="logo">
+            alt="Icono Daruma" class="header__logo">
     </header>
-        <section class="container1">
-            <h2>Mapa interactivo de destinos</h2>
-            <p>El estreno en Netflix de la serie documental La edad de oro de los samuráis volvió a poner de moda, más
+    <main class="main">
+        <section class="samurai-intro-section">
+            <h2 class="samurai-intro-section__tittle">El Japón de los samuráis: Lugares para hacer turismo histórico</h2>
+            <p class="samurai-intro-section__paragraph">
+                El estreno en Netflix de la serie documental La edad de oro de
+                los samuráis volvió a poner de moda, más
                 si cabe, la figura del guerrero samurái en todo el mundo. No es de extrañar que haya muchos turistas
                 interesados en conocer los lugares más destacados y relacionados con estos famosos guerreros japoneses.
                 También hay muchos interesados en aprender a blandir una katana o hacerse una sesión de fotos luciendo
@@ -45,28 +49,26 @@
                 ¡no existieron!
             </p>
         </section>
-        <section class="container2">
+        <section class="article-detail-section">
+            <h2 class="samurai-intro-section__tittle">Templo Enryaku-ji (monte Hiei, Kioto)</h2>
+            <p class="article-detail-section__paragraph">
+                El templo Enryaku-ji (延暦寺) es un enorme complejo budista de la escuela Tendai situado en la cima del
+                monte Hiei, en la región de Kansai al noreste de Kioto. El templo fue adquiriendo poder a lo largo de su
+                historia y llegó a contar con un poderoso ejército de monjes guerreros (llamados sohei en japonés).
 
-            <p>Para facilitarte la selección de destinos en Japón hemos creado un mapa interactivo. Con él puedes
-                acceder al contenido que tenemos sobre cada región de Japón para que sepas qué visitar.
-
-                Tienes marcadas en el mapa algunas ciudades importantes. De esta forma, si quieres centrarte en lo más
-                importante de Japón, lo que se suele visitar en un primero o segundo viaje, puedes conocer en detalle
-                todo lo que se puede ver y hacer en esas ciudades.
-
-                Asimismo, todas las regiones principales de Japón son enlaces que te llevarán al contenido que tenemos
-                sobre ellas. De esta forma, si tienes claro que quieres centrarte en la región de Kansai, por ejemplo,
-                sólo tienes que seleccionarla y pulsarla. Verás todo nuestro contenido de esa región.
+                Es por ello que Oda Nobunaga, en su proceso de unificación del país, vio en el templo Enryaku-ji una
+                potencial fuente de problemas, pues los monjes guerreros amenazaban su presencia en Kioto. En 1571
+                decidió atacar el complejo del templo y matar a todos sus monjes y partidarios en uno cruento ataque. De
+                esta forma, el ataque se convirtió en una auténtica advertencia para cualquiera, religioso o no, que se
+                interpusiera en su camino.
             </p>
-
-
     </main>
-        <footer>
-        <a href="#">Privacidad</a>
-        <a href="#">Términos</a>
-        <a href="#">Ayuda</a>
-        <a href="#">Redes</a>
-        <p>&copy; 2024 JapoAndalû Web</p>
+    <footer>
+        <a href="#" class="footer__link">Privacidad</a>
+        <a href="#" class="footer__link">Términos</a>
+        <a href="#" class="footer__link">Ayuda</a>
+        <a href="#"class="footer__link">Redes</a>
+        <p class="footer__link">&copy; 2024 JapoAndalû Web</p>
     </footer>
 </body>
 

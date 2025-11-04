@@ -1,3 +1,6 @@
+/*/ Selectores Globales y Base   */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +8,7 @@ body {
     background-color: #fff;
 }
 
+/* Base: Bloque 'main' utiliza la misma restricción de ancho que 'body' */
 body,
 main {
     max-width: 1200px;
@@ -13,7 +17,7 @@ main {
 
 /* Header  */
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +28,11 @@ header {
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-header h1 {
+.header_tittle {
     margin: 0;
 }
 
-nav ul {
+.header_nav-list {
     display: flex;
     gap: 15px;
     /* Espacio entre los enlaces */
@@ -37,7 +41,7 @@ nav ul {
     margin: 0;
 }
 
-nav a {
+.header_nav-link {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -47,30 +51,28 @@ nav a {
     border-radius: 4px;
 }
 
-nav a:hover {
+.header_nav-link:hover {
     color: #b02626;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Nivel 3: Destacar enlace activo */
-nav a.activo {
+.header_nav-link--active {
     color: white;
-    /* Color de texto blanco */
+    
     background-color: transparent;
     border-bottom: 3px solid white;
     /* Subrayado blanco para destacar el activo */
 }
 
-
-
-.logo {
+.header_.logo {
     width: 60px;
     height: auto;
 }
 
 /* Main */
 
-main {
+.main {
     background-color: #f9f9f9;
     padding: 40px;
     display: flex;
@@ -78,16 +80,20 @@ main {
     gap: 60px;
 }
 
-.span1 {
+.content-section__paragraph--span{
     font-weight: bold;
 }
 
-.container1,
-.container2,
-.container3,
-.container4,
-.container5,
-.container6{
+
+/* SELECTORES DE SECCIONES*/
+.content-section,  /* Página 1 (Templo) */
+.destination-map-section, /* Página 2 (Destinos) */
+.destination-info-section,
+.book-introduction,         /* Página 3 (Libros) */
+.table-of-contents,
+.book-detail,
+.samurai-intro-section,     /* Página 4 (Samurais) */
+.article-detail-section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,12 +101,15 @@ main {
     align-items: center;
 }
 
-.container1 p,
-.container2 p,
-.container3 p,
-.container4 p,
-.container5 p,
-.container6 p {
+/* Párrafos dentro de los diferentes bloques de contenido */
+
+.content-section__paragraph,
+.destination-map-section__paragraph,
+.destination-info-section__paragraph,
+.book-detail__paragraph,
+.samurai-intro-section,
+.article-detail-paragraph
+{
     flex: 1 1 300px;
     max-width: 600px;
     text-align: justify;
