@@ -18,37 +18,41 @@ main {
 /* Header  */
 
 .header {
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(186, 57, 70);
+    color:rgb(237, 228, 217);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #b02626;
-    color: white;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    position: sticky;
+    top:0 px;
+    z-index: 1;
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
 .header_tittle {
-    margin: 0;
+    text-decoration: underline;
+    color: aliceblue;
+    justify-self: center;
 }
 
 .header_nav-list {
-    display: flex;
-    gap: 15px;
-    /* Espacio entre los enlaces */
-    list-style: none;
-    padding: 0;
-    margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content:space-around;
+        gap:20px
 }
 
-.header_nav-link {
+.header__nav-list{
+    color:beige;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px;
-    /* Padding de enlaces (Nivel 2) */
-    border-radius: 4px;
+    padding: 4px 7px;
+    margin: 0 4px;
+    border-radius: 6px;
+    transition: .5s;
 }
 
 .header_nav-link:hover {
@@ -116,9 +120,8 @@ main {
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
 }
-
-.images1,
-.images2 {
+/*Imagenes */
+.content-section__gallery {
     display: flex;
     gap: 20px;
     flex: 1 1 300px;
@@ -126,31 +129,29 @@ main {
     flex-wrap: wrap;
 }
 
-.images1 img,
-.images2 img {
+.content-section__image {
     width: 45%;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
-}
-
-.imagen-destacada {
     border: 3px solid rgb(110, 91, 219);
     box-shadow: 0 0 10px rgba(110, 91, 219, 0.5);
 }
 
-.enlace {
+.article-detail__link,
+.table-of-contents__link {
     color: rgb(176, 41, 52);
     font-weight: bold;
     text-decoration: underline;
 }
 
-.enlace:hover {
+.article-detail__link:hover,
+.table-of-contents__link:hover {
     background-color: rgb(166, 98, 107);
     color: white;
 }
 
-.container2 iframe {
+.destination-map-section__iframe {
     /* Añade algo de margen debajo del mapa */
     margin-bottom: 20px; 
     /* Si quieres un borde */
@@ -159,7 +160,7 @@ main {
 
 /* Footer  */
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,23 +170,23 @@ footer {
     gap: 15px;
 }
 
-footer a {
+.footer__link {
     color: #ccc;
     text-decoration: none;
     margin: 0 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-footer a:hover {
+.footer__link:hover {
     color: lightblue;
 }
 
-.enlace-footer {
+.footer__link--highlight {
     font-weight: bold;
     text-decoration: underline;
 }
 
-footer p {
+.footer__copyrigh {
     margin-top: 10px;
     font-size: 0.9em;
 }

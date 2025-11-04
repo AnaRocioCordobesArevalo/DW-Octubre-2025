@@ -32,20 +32,25 @@ header {
     justify-self: center;
 }
 
-.header__nav-list{
+.header__nav{
         list-style: none;
         display: flex;
         justify-content:space-around;
         gap:20px
 }
 
-.header__nav-list{
+.header__nav{
     color:beige;
     text-decoration: none;
     padding: 4px 7px;
     margin: 0 4px;
     border-radius: 6px;
     transition: .5s;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
 }
 
 
