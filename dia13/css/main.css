@@ -10,36 +10,34 @@ body {
     overflow-y: auto;
     scroll-snap-type: mandatory;
 }
+
 /* HEADER  */
 header {
     height: 25vh;
     width: 100%;
     background-color: rgb(123, 123, 235);
-    color:rgb(237, 228, 217);
+    color: rgb(237, 228, 217);
     font-size: .9375rem;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: sticky;
-    top:0 px;
+    top: 0 px;
     z-index: 1;
 }
 
-.header_tittle{
+.header_tittle {
     text-decoration: underline;
     color: aliceblue;
     justify-self: center;
 }
 
-.header__nav-list{
-        list-style: none;
-        display: flex;
-        gap:20px
-}
-
-.header__nav-list{
-    color:beige;
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: beige;
     text-decoration: none;
     padding: 4px 7px;
     margin: 0 4px;
@@ -49,12 +47,14 @@ header {
     justify-content: center;
 }
 
-.header__nav-list:hover{
+
+
+.header__nav-list:hover {
     text-decoration: underline;
-    transition:.5s;
+    transition: .5s;
 }
 
-.header__nav-list--active{
+.header__nav-list--active {
     font-weight: bold;
     text-decoration: underline;
 }
@@ -63,6 +63,7 @@ header {
 .main {
     height: 300vh;
 }
+
 .content-section__paragraph-first,
 .content-section__paragraph-second,
 .content-section__paragraph-third {
@@ -82,6 +83,7 @@ header {
 .content-section__paragraph-second {
     background-color: rgb(135, 101, 204);
 }
+
 .content-section__paragraph-third {
     background-color: rgb(232, 211, 120);
 }

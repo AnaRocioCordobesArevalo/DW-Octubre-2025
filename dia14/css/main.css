@@ -7,62 +7,63 @@
     font-style: bold;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- /*Header  */
-.header{
+
+/*Header */
+.header {
     height: 25vh;
     width: 100%;
-    background-color:black ;
-    color:rgb(237, 228, 217);
+    background-color: black;
+    color: rgb(237, 228, 217);
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: sticky;
-    top:0 px;
+    top: 0; /* Corregido '0 px' a '0' */
     z-index: 1;
-
-    
-}
-.header__nav-list{
-        list-style: none;
-        display: flex;
-        gap:20px
 }
 
-.header__nav-list{
-    color:beige;
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Eliminados estilos de enlace (color, padding, etc.) de aquí */
+}
+
+/* CORRECCIÓN: Estilos aplicados a los enlaces <a> dentro de la lista */
+.header__nav-list li a { 
+    color: beige;
     text-decoration: none;
     padding: 4px 7px;
     margin: 0 4px;
     border-radius: 6px;
-    transition: .5s;
     transition: background-color .5s;
-    justify-content: center;
+    /* justify-content center eliminado, no aplica a un enlace inline */
 }
 
-.header__nav-list:hover{
+.header__nav-list li a:hover {
     text-decoration: underline;
-    transition:.5s;
+    transition: .5s;
 }
 
-.header__nav-list--active{
+.header__nav-list--active {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.header__logo{
+.header__logo {
     width: 200px;
     height: auto;
 }
 
 /*Main*/
-.main{  /*Para que se quede el footer en la parte baja de la pagina  */
+.main {
     min-height: calc(100vh - 200px);
     background-color: #f9f9f9;
     padding: 40px;
@@ -79,13 +80,22 @@
     align-items: center;
 }
 
-.content-section__paragraph{
+.content-section__paragraph {
     flex: 300px;
     max-width: 600px;
     text-align: justify;
-    
 }
 
+/* Nivel 2: Estilos de texto avanzados */
+.text-style-advanced {
+    /* text-wrap: Controla el flujo del texto */
+    text-wrap: balance; 
+    
+    /* hyphens: Divide correctamente las palabras largas */
+    hyphens: auto; 
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto; 
+}
 
 
 /* Footer */
