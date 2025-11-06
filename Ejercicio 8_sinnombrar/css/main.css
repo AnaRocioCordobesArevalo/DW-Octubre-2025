@@ -13,7 +13,7 @@ main {
 
 /* Header  */
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +24,11 @@ main {
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-.header__tittle {
+header h1 {
     margin: 0;
 }
 
-.header__nav {
+nav ul {
     display: flex;
     gap: 15px;
     /* Espacio entre los enlaces */
@@ -37,32 +37,33 @@ main {
     margin: 0;
 }
 
-.header__nav-list {
-    display: flex;
+nav a {
     text-decoration: none;
-    gap: 20px;
     color: white;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
     padding: 5px 10px;
+    /* Padding de enlaces (Nivel 2) */
     border-radius: 4px;
 }
 
-.header__nav-list:hover {
+nav a:hover {
     color: #b02626;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.header__nav-list.activo {
+/* Nivel 3: Destacar enlace activo */
+nav a.activo {
     color: white;
+    /* Color de texto blanco */
     background-color: transparent;
     border-bottom: 3px solid white;
-    
+    /* Subrayado blanco para destacar el activo */
 }
 
 
 
-.header__logo {
+.logo {
     width: 60px;
     height: auto;
 }
@@ -77,11 +78,11 @@ main {
     gap: 60px;
 }
 
-.content-section__paragraph--span {
+.span1 {
     font-weight: bold;
 }
 
-.content-section,
+.container1,
 .container2,
 .container3,
 .container4,
@@ -94,7 +95,7 @@ main {
     align-items: center;
 }
 
-.content-section__paragraph,
+.container1 p,
 .container2 p,
 .container3 p,
 .container4 p,
@@ -107,7 +108,8 @@ main {
     font-family: 'Lato', sans-serif;
 }
 
-.content-section__gallery--first{
+.images1,
+.images2 {
     display: flex;
     gap: 20px;
     flex: 1 1 300px;
@@ -115,7 +117,8 @@ main {
     flex-wrap: wrap;
 }
 
-.content-section__gallery--second {
+.images1 img,
+.images2 img {
     width: 45%;
     max-width: 300px;
     height: auto;
@@ -147,7 +150,7 @@ main {
 
 /* Footer  */
 
-.footer {
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,23 +160,23 @@ main {
     gap: 15px;
 }
 
-.footer__link {
+footer a {
     color: #ccc;
     text-decoration: none;
     margin: 0 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.footer__link:hover {
+footer a:hover {
     color: lightblue;
 }
 
-.footer__link {
+.enlace-footer {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.footer__copyright {
+footer p {
     margin-top: 10px;
     font-size: 0.9em;
 }
@@ -181,13 +184,13 @@ main {
 
 
 @media (max-width: 768px) {
-    .header {
+    header {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 
-    .header__nav {
+    nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
