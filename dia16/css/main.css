@@ -114,3 +114,49 @@ body{
 }
 
 /*Nivel 2-B */
+
+.b_a{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.b_b{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.b_c {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.b_d {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.b_e{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.b_f{
+    grid-area:  1 / 3 / 2 / 4 ;
+}
+
+
+/*Nivel 3-A */
+
+.c_a{
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.c_b{
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+.c_c{
+    grid-column: 1;
+    grid-row: 2;
+}
+.c_d{
+    grid-column: 2;
+    grid-row: 2;
+}
