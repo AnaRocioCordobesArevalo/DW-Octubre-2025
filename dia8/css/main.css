@@ -28,6 +28,20 @@ main {
     margin: 0;
 }
 
+.header__tittle-h2{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2em; 
+    color: #b02626; 
+    font-weight: 700; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    padding-bottom: 5px; 
+    border-bottom: 3px solid #ccc; 
+    max-width: 600px; 
+    width: 90%; /
+}
+
 .header__nav {
     /* Esta regla ya no necesita el gap/list-style: none, pero la dejamos. */
     display: flex;
@@ -86,12 +100,7 @@ main {
     font-weight: bold;
 }
 
-.content-section,
-.container2,
-.container3,
-.container4,
-.container5,
-.container6{
+.content-section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,12 +108,7 @@ main {
     align-items: center;
 }
 
-.content-section__paragraph,
-.container2 p,
-.container3 p,
-.container4 p,
-.container5 p,
-.container6 p {
+.content-section__paragraph {
     flex: 1 1 300px;
     max-width: 600px;
     text-align: justify;
@@ -112,43 +116,31 @@ main {
     font-family: 'Lato', sans-serif;
 }
 
-.content-section__gallery--first{
-    display: flex;
-    gap: 20px;
-    flex: 1 1 300px;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.content-section__gallery--second {
-    width: 45%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
 
-.imagen-destacada {
-    border: 3px solid rgb(110, 91, 219);
-    box-shadow: 0 0 10px rgba(110, 91, 219, 0.5);
-}
 
-.enlace {
+
+.article-detail__link {
     color: rgb(176, 41, 52);
     font-weight: bold;
-    text-decoration: underline;
+    
 }
 
-.enlace:hover {
+.article-detail__link:hover {
     background-color: rgb(166, 98, 107);
     color: white;
 }
 
-.container2 iframe {
-    /* Añade algo de margen debajo del mapa */
-    margin-bottom: 20px; 
-    /* Si quieres un borde */
-    border: 1px solid #ccc !important;
+/* Estilo para uniformar todas las imágenes en tu contenido */
+.content-section img {
+    width: 300px;  
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block; 
+    flex-wrap: wrap;
 }
+
 
 /* Footer  */
 
@@ -175,7 +167,6 @@ main {
 
 .footer__link {
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .footer__copyright {
