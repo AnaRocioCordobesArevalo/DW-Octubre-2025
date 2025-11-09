@@ -11,7 +11,7 @@ main {
     margin: auto;
 }
 
-/* Header  */
+/* Header    Repasar para futuras páginas */
 
 .header {
     display: flex;
@@ -29,38 +29,43 @@ main {
 }
 
 .header__nav {
+    /* Esta regla ya no necesita el gap/list-style: none, pero la dejamos. */
     display: flex;
-    gap: 15px;
-    /* Espacio entre los enlaces */
-    list-style: none;
+    gap: 15px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.header__nav-list {
+    display: flex; 
+    gap: 20px; 
+    list-style: none; /* ¡CRUCIAL para quitar los puntos! */
     padding: 0;
     margin: 0;
 }
 
-.header__nav-list {
-    display: flex;
+
+.header__nav-list li a {
+    
     text-decoration: none;
-    gap: 20px;
     color: white;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px;
+    padding: 5px 10px; /* Padding de enlaces (Nivel 2) */
     border-radius: 4px;
+    display: block; /* Para que el padding y el hover funcionen bien */
 }
 
-.header__nav-list:hover {
+.header__nav-list li a:hover {
     color: #b02626;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.header__nav-list.activo {
+.header__nav-list li a.activo {
     color: white;
     background-color: transparent;
     border-bottom: 3px solid white;
-    
 }
-
-
 
 .header__logo {
     width: 60px;
@@ -193,5 +198,5 @@ main {
         gap: 10px;
     }
 
-    /* ... el resto de las reglas responsivas ... */
+    
 }
