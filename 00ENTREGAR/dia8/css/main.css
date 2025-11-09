@@ -11,9 +11,9 @@ main {
     margin: auto;
 }
 
-/* Header  */
+/* Header    Repasar para futuras páginas */
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,46 +24,64 @@ header {
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-header h1 {
+.header__tittle {
     margin: 0;
 }
 
-nav ul {
+.header__tittle-h2{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2em; 
+    color: #b02626; 
+    font-weight: 700; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    padding-bottom: 5px; 
+    border-bottom: 3px solid #ccc; 
+    max-width: 600px; 
+    width: 90%; /
+}
+
+.header__nav {
+    /* Esta regla ya no necesita el gap/list-style: none, pero la dejamos. */
     display: flex;
-    gap: 15px;
-    /* Espacio entre los enlaces */
-    list-style: none;
+    gap: 15px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.header__nav-list {
+    display: flex; 
+    gap: 20px; 
+    list-style: none; /* ¡CRUCIAL para quitar los puntos! */
     padding: 0;
     margin: 0;
 }
 
-nav a {
+
+.header__nav-list li a {
+    
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px;
-    /* Padding de enlaces (Nivel 2) */
+    padding: 5px 10px; /* Padding de enlaces (Nivel 2) */
     border-radius: 4px;
+    display: block; /* Para que el padding y el hover funcionen bien */
 }
 
-nav a:hover {
+.header__nav-list li a:hover {
     color: #b02626;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Nivel 3: Destacar enlace activo */
-nav a.activo {
+.header__nav-list li a.activo {
     color: white;
-    /* Color de texto blanco */
     background-color: transparent;
     border-bottom: 3px solid white;
-    /* Subrayado blanco para destacar el activo */
 }
 
-
-
-.logo {
+.header__logo {
     width: 60px;
     height: auto;
 }
@@ -78,16 +96,19 @@ main {
     gap: 60px;
 }
 
-.span1 {
+.table-of-contents__list{
+    background-color: #e6e4e4;
+    border-radius: 5% ;
+    margin: auto;
+    width: 500px;
+}
+
+
+.content-section__paragraph--span {
     font-weight: bold;
 }
 
-.container1,
-.container2,
-.container3,
-.container4,
-.container5,
-.container6{
+.content-section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,12 +116,7 @@ main {
     align-items: center;
 }
 
-.container1 p,
-.container2 p,
-.container3 p,
-.container4 p,
-.container5 p,
-.container6 p {
+.content-section__paragraph {
     flex: 1 1 300px;
     max-width: 600px;
     text-align: justify;
@@ -108,49 +124,35 @@ main {
     font-family: 'Lato', sans-serif;
 }
 
-.images1,
-.images2 {
-    display: flex;
-    gap: 20px;
-    flex: 1 1 300px;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.images1 img,
-.images2 img {
-    width: 45%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
 
-.imagen-destacada {
-    border: 3px solid rgb(110, 91, 219);
-    box-shadow: 0 0 10px rgba(110, 91, 219, 0.5);
-}
 
-.enlace {
+
+.article-detail__link {
     color: rgb(176, 41, 52);
     font-weight: bold;
-    text-decoration: underline;
+    
 }
 
-.enlace:hover {
+.article-detail__link:hover {
     background-color: rgb(166, 98, 107);
     color: white;
 }
 
-.container2 iframe {
-    /* Añade algo de margen debajo del mapa */
-    margin-bottom: 20px; 
-    /* Si quieres un borde */
-    border: 1px solid #ccc !important;
+/* Estilo para uniformar todas las imágenes en tu contenido */
+.content-section img {
+    width: 300px;  
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block; 
+    flex-wrap: wrap;
 }
+
 
 /* Footer  */
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,23 +162,22 @@ footer {
     gap: 15px;
 }
 
-footer a {
+.footer__link {
     color: #ccc;
     text-decoration: none;
     margin: 0 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-footer a:hover {
+.footer__link:hover {
     color: lightblue;
 }
 
-.enlace-footer {
+.footer__link {
     font-weight: bold;
-    text-decoration: underline;
 }
 
-footer p {
+.footer__copyright {
     margin-top: 10px;
     font-size: 0.9em;
 }
@@ -184,17 +185,17 @@ footer p {
 
 
 @media (max-width: 768px) {
-    header {
+    .header {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 
-    nav ul {
+    .header__nav {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    /* ... el resto de las reglas responsivas ... */
+    
 }

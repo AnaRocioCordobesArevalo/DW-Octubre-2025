@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Bellota';
+    src: url(../font/Bellota-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+body,
+main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #727171;
+}
+
+/* Header    Repasar para futuras páginas */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+
+.header__logo{
+    width: 150px;
+}
+
+
+
+
+.header__tittle {
+    margin: 0;
+}
+
+.header__tittle-h2{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2em; 
+    color: #b02626; 
+    font-weight: 700; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    padding-bottom: 5px; 
+    border-bottom: 3px solid #ccc; 
+    max-width: 600px; 
+    width: 90%; /
+}
+
+.header__nav {
+    /* Esta regla ya no necesita el gap/list-style: none, pero la dejamos. */
+    display: flex;
+    gap: 15px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.header__nav-list {
+    display: flex; 
+    gap: 20px; 
+    list-style: none; /* ¡CRUCIAL para quitar los puntos! */
+    padding: 0;
+    margin: 0;
+}
+
+
+.header__nav-list li a {
+    
+    text-decoration: none;
+    color: rgb(246, 252, 248);
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px; /* Padding de enlaces (Nivel 2) */
+    border-radius: 4px;
+    display: block; /* Para que el padding y el hover funcionen bien */
+}
+
+.header__nav-list li a:hover {
+    color: #a426b0;
+    background-color: rgba(103, 202, 136, 0.9);
+}
+
+.header__nav-list li a.activo {
+    color: rgb(116, 207, 113);
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+/* Main */
+
+m/* ... Tu código CSS anterior (font-face, reset, body, main, header) ... */
+
+/* Main */
+
+main {
+    background-color: #f9f9f9;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /* Recomendación: Asegúrate de que el body no limite el ancho del main
+       si quieres que ocupe todo el espacio disponible dentro del body.
+       Tu CSS anterior tiene 'body, main { max-width: 1200px; }', lo cual es válido.
+    */
+}
+
+/* 🆕 Nuevo Estilo: ARTICLE (El contenedor principal de contenido independiente) */
+.main-article {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff; /* Fondo blanco para destacar el artículo */
+}
+
+/* 🆕 Nuevo Estilo: MARK (Resaltado) */
+mark {
+    background-color: #ffda00; /* Un color de resaltado (amarillo neón clásico) */
+    color: #000000;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+
+/* 🆕 Nuevo Estilo: BLOCKQUOTE y CITE (Citas) */
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #b02626; /* Línea temática (rojo Evangelion) */
+    background-color: #f5f5f5;
+    line-height: 1.8;
+}
+
+cite {
+    display: block; /* Para que el autor aparezca en una nueva línea */
+    text-align: right;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Estilo que afecta al <section> (contenido temático) */
+.content-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-section__paragraph {
+    flex: 1 1 300px;
+    max-width: 600px;
+    text-align: justify;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ⚠️ Ajuste: Figura ahora tiene sus propios estilos semánticos */
+/* En lugar de usar la clase en el figure, usamos la etiqueta */
+.content-section figure{
+    width: auto; /* Dejamos que el ancho lo controle el contenido (la imagen) */
+    margin: 20px 0; /* Espaciado */
+    text-align: center;
+    border: none; /* Quitamos bordes si no son necesarios */
+}
+.content-section figure img {
+    /* Aseguramos que la imagen dentro de figure sea responsive */
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Mantienes el border-radius */
+}
+
+/* 🆕 Nuevo Estilo: FIGCAPTION (Leyenda de la figura) */
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Aside */
+/* ⚠️ Ajuste: Cambiamos las dimensiones fijas para que sea más funcional */
+.content-aside{
+    padding: 20px;
+    background-color: #d1d1d1; /* Fondo diferente para destacarlo como secundario */
+    border-left: 3px solid #6b6a6a;
+    width: 90%; /* Mejor que 50px de ancho fijo */
+    max-width: 300px;
+    margin: 20px auto; /* Centrarlo si es necesario */
+    /* ... Puedes añadir más estilos de tipografía o fondo aquí ... */
+}
+
+/* Footer (sin cambios relevantes ya que el HTML no cambió) */
+
+/* ... Tu código CSS de footer y media queries anterior ... */
+
+/* Recomendación extra: Estilizar la etiqueta <time> si lo deseas */
+time {
+    font-weight: bold;
+    color: #b02626;
+}
+
+/* Footer  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e0c0c;
+    color: white;
+    padding: 30px 20px;
+    gap: 15px;
+}
+
+.footer__link {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__link:hover {
+    color: lightblue;
+}
+
+.footer__link {
+    font-weight: bold;
+}
+
+.footer__copyright {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+}
