@@ -96,6 +96,14 @@ main {
     gap: 60px;
 }
 
+.table-of-contents__list{
+    background-color: #e6e4e4;
+    border-radius: 5% ;
+    margin: auto;
+    width: 500px;
+}
+
+
 .content-section__paragraph--span {
     font-weight: bold;
 }
