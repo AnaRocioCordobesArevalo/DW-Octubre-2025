@@ -5,7 +5,7 @@
     font-style: bold;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,35 +16,33 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: center;
 }
 
-body,
-main {
+
+.header,
+.footer {
     max-width: 1200px;
-    margin: auto;
-    background-color: #727171;
+    width: 100%;
+    /* Ocupa el 100% del max-width */
+    margin: 0 auto;
+    /* Centra el elemento */
 }
-
-/* Header    Repasar para futuras páginas */
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000000;
+    background-color: #070505;
     color: white;
     flex-wrap: wrap;
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
-
-
-.header__logo{
-    width: 150px;
-}
-
-
-
 
 .header__tittle {
     margin: 0;
@@ -84,7 +82,7 @@ main {
 .header__nav-list li a {
     
     text-decoration: none;
-    color: rgb(246, 252, 248);
+    color: white;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
     padding: 5px 10px; /* Padding de enlaces (Nivel 2) */
@@ -93,71 +91,83 @@ main {
 }
 
 .header__nav-list li a:hover {
-    color: #a426b0;
-    background-color: rgba(103, 202, 136, 0.9);
+    color: #b02626;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .header__nav-list li a.activo {
-    color: rgb(116, 207, 113);
+    color: white;
     background-color: transparent;
     border-bottom: 3px solid white;
 }
 
-/* Main */
-
-m/* ... Tu código CSS anterior (font-face, reset, body, main, header) ... */
+.header__logo {
+    width: 150px;
+    height: auto;
+}
 
 /* Main */
 
 main {
+    /* Quitamos el margin: auto aquí, ya que el body lo centra */
     background-color: #f9f9f9;
     padding: 40px;
+
+
+    max-width: 1200px;
+    width: 100%;
+
+    
     display: flex;
-    flex-direction: column;
-    gap: 60px;
-    /* Recomendación: Asegúrate de que el body no limite el ancho del main
-       si quieres que ocupe todo el espacio disponible dentro del body.
-       Tu CSS anterior tiene 'body, main { max-width: 1200px; }', lo cual es válido.
-    */
+    flex-direction: row;
+    
+    gap: 20px;
+    
+    align-items: flex-start;
 }
 
-/* 🆕 Nuevo Estilo: ARTICLE (El contenedor principal de contenido independiente) */
+
+.main-article,
+.quote-section {
+    flex-grow: 1;
+
+}
+
+
 .main-article {
     padding: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    background-color: #ffffff; /* Fondo blanco para destacar el artículo */
+    background-color: #ffffff;
 }
 
-/* 🆕 Nuevo Estilo: MARK (Resaltado) */
+
 mark {
-    background-color: #ffda00; /* Un color de resaltado (amarillo neón clásico) */
+    background-color: #ddcc6a;
     color: #000000;
     padding: 2px 4px;
     border-radius: 2px;
 }
 
 
-/* 🆕 Nuevo Estilo: BLOCKQUOTE y CITE (Citas) */
 blockquote {
     font-style: italic;
     margin: 20px 0;
     padding: 15px 20px;
-    border-left: 5px solid #b02626; /* Línea temática (rojo Evangelion) */
+    border-left: 5px solid #b02626;
     background-color: #f5f5f5;
     line-height: 1.8;
 }
 
 cite {
-    display: block; /* Para que el autor aparezca en una nueva línea */
+    display: block;
     text-align: right;
     font-size: 0.9em;
     color: #333;
     margin-top: 5px;
 }
 
-/* Estilo que afecta al <section> (contenido temático) */
-.content-section{
+.content-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -173,23 +183,22 @@ cite {
     font-family: 'Lato', sans-serif;
 }
 
-/* ⚠️ Ajuste: Figura ahora tiene sus propios estilos semánticos */
-/* En lugar de usar la clase en el figure, usamos la etiqueta */
-.content-section figure{
-    width: auto; /* Dejamos que el ancho lo controle el contenido (la imagen) */
-    margin: 20px 0; /* Espaciado */
+
+.content-section figure {
+    width: auto;
+    margin: 20px 0;
     text-align: center;
-    border: none; /* Quitamos bordes si no son necesarios */
-}
-.content-section figure img {
-    /* Aseguramos que la imagen dentro de figure sea responsive */
-    max-width: 100%; 
-    height: auto;
-    display: block;
-    border-radius: 10px; /* Mantienes el border-radius */
+    border: none;
 }
 
-/* 🆕 Nuevo Estilo: FIGCAPTION (Leyenda de la figura) */
+.content-section figure img {
+
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
 figcaption {
     font-size: 0.9em;
     color: #666;
@@ -198,28 +207,22 @@ figcaption {
 }
 
 /* Aside */
-/* ⚠️ Ajuste: Cambiamos las dimensiones fijas para que sea más funcional */
-.content-aside{
+
+.content-aside {
+
+    width: 300px;
+    flex-shrink: 0;
     padding: 20px;
-    background-color: #d1d1d1; /* Fondo diferente para destacarlo como secundario */
+    background-color: #d1d1d1;
     border-left: 3px solid #6b6a6a;
-    width: 90%; /* Mejor que 50px de ancho fijo */
-    max-width: 300px;
-    margin: 20px auto; /* Centrarlo si es necesario */
-    /* ... Puedes añadir más estilos de tipografía o fondo aquí ... */
 }
 
-/* Footer (sin cambios relevantes ya que el HTML no cambió) */
-
-/* ... Tu código CSS de footer y media queries anterior ... */
-
-/* Recomendación extra: Estilizar la etiqueta <time> si lo deseas */
 time {
     font-weight: bold;
     color: #b02626;
 }
 
-/* Footer  */
+/* Footer  */
 
 .footer {
     display: flex;
@@ -253,7 +256,22 @@ time {
 
 
 
+
 @media (max-width: 768px) {
+
+    
+    main {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content-aside {
+        width: auto;
+        
+        border-left: none;
+        border-top: 3px solid #6b6a6a;
+    }
+
     .header {
         flex-direction: column;
         text-align: center;
@@ -265,6 +283,4 @@ time {
         align-items: center;
         gap: 10px;
     }
-
-    
 }

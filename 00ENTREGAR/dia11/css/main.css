@@ -1,24 +1,44 @@
+@font-face {
+    font-family: 'Bellota';
+    src: url(../font/Bellota-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: center;
 }
 
-body,
-main {
+
+.header,
+.footer {
     max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    /* Ocupa el 100% del max-width */
+    margin: 0 auto;
+    /* Centra el elemento */
 }
-
-/* Header    Repasar para futuras páginas */
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #b02626;
+    background-color: #070505;
     color: white;
     flex-wrap: wrap;
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
@@ -82,33 +102,72 @@ main {
 }
 
 .header__logo {
-    width: 60px;
+    width: 150px;
     height: auto;
 }
 
 /* Main */
 
 main {
+    /* Quitamos el margin: auto aquí, ya que el body lo centra */
     background-color: #f9f9f9;
     padding: 40px;
+
+
+    max-width: 1200px;
+    width: 100%;
+
+    
     display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-.table-of-contents__list{
-    background-color: #e6e4e4;
-    border-radius: 5% ;
-    margin: auto;
-    width: 500px;
+    flex-direction: row;
+    
+    gap: 20px;
+    
+    align-items: flex-start;
 }
 
 
-.content-section__paragraph--span {
-    font-weight: bold;
+.main-article,
+.quote-section {
+    flex-grow: 1;
+
 }
 
-.content-section{
+
+.main-article {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
+mark {
+    background-color: #ddcc6a;
+    color: #000000;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #b02626;
+    background-color: #f5f5f5;
+    line-height: 1.8;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 5px;
+}
+
+.content-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -125,38 +184,51 @@ main {
 }
 
 
-
-
-
-.article-detail__link {
-    color: rgb(176, 41, 52);
-    font-weight: bold;
-    
+.content-section figure {
+    width: auto;
+    margin: 20px 0;
+    text-align: center;
+    border: none;
 }
 
-.article-detail__link:hover {
-    background-color: rgb(166, 98, 107);
-    color: white;
-}
+.content-section figure img {
 
-/* Estilo para uniformar todas las imágenes en tu contenido */
-.content-section img {
-    width: 300px;  
-    height: 200px; 
-    object-fit: cover; 
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
-    display: block; 
-    flex-wrap: wrap;
 }
 
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
 
-/* Footer  */
+/* Aside */
+
+.content-aside {
+
+    width: 300px;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #d1d1d1;
+    border-left: 3px solid #6b6a6a;
+}
+
+time {
+    font-weight: bold;
+    color: #b02626;
+}
+
+/* Footer  */
 
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #b02626;
+    background-color: #0e0c0c;
     color: white;
     padding: 30px 20px;
     gap: 15px;
@@ -184,7 +256,22 @@ main {
 
 
 
+
 @media (max-width: 768px) {
+
+    
+    main {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content-aside {
+        width: auto;
+        
+        border-left: none;
+        border-top: 3px solid #6b6a6a;
+    }
+
     .header {
         flex-direction: column;
         text-align: center;
@@ -196,6 +283,4 @@ main {
         align-items: center;
         gap: 10px;
     }
-
-    
 }

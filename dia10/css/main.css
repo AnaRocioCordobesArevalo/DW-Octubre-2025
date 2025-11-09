@@ -1,76 +1,110 @@
+:root {
+    font-size: 16px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
 @font-face {
-    font-family: 'Lato' ;
-    src: url(../font/Bellota-Bold.ttf);
-    font-weight: bold;
-    font-style: bold;
+    font-family: 'MiFuentePersonalizada';
+    src: url('[RUTA_A_TU_FUENTE]/CustomFont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.croqueta{
-    font-family: 'Lato';
-    src: url(../font/Bellota-Bold.ttf);
-    font-weight: bold;
-    font-style: bold;
+.h2_custom_font, .p_variable_font {
+    font-family: 'MiFuentePersonalizada', Arial, sans-serif;
 }
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.p_variable_font {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 400;     
+    font-stretch: 100%;   
+    font-style: normal;   
+    font-variation-settings: 
+        'wght' 700,
+        'slnt' -10;
 }
- /* Nivel 1  */
-.container__h1{
-    background-color: cadetblue;
-    font-size: calc (2vw+ 10px);
-    margin-bottom: 5vh;
-}
-.container__h2{
-    background-color: coral;
-    font-size: 2em;
 
+.container__h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
 }
-.container_object_nivel1a{
-    background-color: burlywood;
-    width: 20px;
-    font-size: 20px;
 
+.container__h2 {
+    font-size: 2.5rem;
+    color: #007bff;
 }
-.container_object_item{
-    background-color: rgb(170, 103, 148);
-    font-size: 5em;
+
+.container_object_item {
+    font-size: 100%;
+    margin-bottom: 1vh;
     width: 90%;
+}
 
+.container_object__buttom {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 20vw;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
-.container_object_nivel1b{
-    width: 50vw;
-    padding: calc (2 rem + 5 px);
-    background-color: lightgreen;
-}
-.parrafo-rem{
-    max-width: 60vh;
-    font-size: 1.6em;
-}
-.container_object__buttom{
+
+.container_object_nivel1a {
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid #dc3545;
+    margin: 20px 0;
     padding: 10px;
-    width: 50%;
-    font-size: 1rem;
 }
 
-/* Nivel 2  */
+.container_object_nivel1a .container_object_item {
+    font-size: 5em; 
+    line-height: 1.1;
+    color: #dc3545;
+    overflow: hidden;
+}
 
-.container_object_nivel1b{
-    max-width: 60vh;
-    line-height: 1.6em;
+.container_object_nivel1b {
+    width: 50vw; 
+    padding: calc(2rem + 5px); 
+    border: 2px solid #ffc107;
+    margin: 20px 0;
+    background-color: #fffbe6;
+}
+
+.h1_desafio_extra {
+    font-size: calc(2vw + 10px); 
+    color: #17a2b8;
 }
 
 .p_rem_nivel1 {
-    font-size: 1.5rem;
-}
-.container__h1.h1_vw_test{
-    font-size: 5vw;
+    max-width: 60vh; 
+    line-height: 1.6em; 
+    font-size: 1.1rem;
+    margin: 0 auto 30px auto;
+    padding: 1rem;
+    border: 1px dashed #6c757d;
 }
 
-.p_prueba_vh{
-    font-size: 2vh;
+.h2_vw_test {
+    font-size: 5vw; 
+    color: #6f42c1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.p_prueba_vh {
+    font-size: 2vh; 
+    margin-top: 10px;
+    padding: 1vh;
+    border: 1px solid #fd7e14;
 }
