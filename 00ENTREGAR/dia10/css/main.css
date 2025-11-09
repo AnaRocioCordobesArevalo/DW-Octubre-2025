@@ -1,0 +1,110 @@
+:root {
+    font-size: 16px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('[RUTA_A_TU_FUENTE]/CustomFont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.h2_custom_font, .p_variable_font {
+    font-family: 'MiFuentePersonalizada', Arial, sans-serif;
+}
+
+.p_variable_font {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 400;     
+    font-stretch: 100%;   
+    font-style: normal;   
+    font-variation-settings: 
+        'wght' 700,
+        'slnt' -10;
+}
+
+.container__h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+
+.container__h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.container_object_item {
+    font-size: 100%;
+    margin-bottom: 1vh;
+    width: 90%;
+}
+
+.container_object__buttom {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 20vw;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.container_object_nivel1a {
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid #dc3545;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.container_object_nivel1a .container_object_item {
+    font-size: 5em; 
+    line-height: 1.1;
+    color: #dc3545;
+    overflow: hidden;
+}
+
+.container_object_nivel1b {
+    width: 50vw; 
+    padding: calc(2rem + 5px); 
+    border: 2px solid #ffc107;
+    margin: 20px 0;
+    background-color: #fffbe6;
+}
+
+.h1_desafio_extra {
+    font-size: calc(2vw + 10px); 
+    color: #17a2b8;
+}
+
+.p_rem_nivel1 {
+    max-width: 60vh; 
+    line-height: 1.6em; 
+    font-size: 1.1rem;
+    margin: 0 auto 30px auto;
+    padding: 1rem;
+    border: 1px dashed #6c757d;
+}
+
+.h2_vw_test {
+    font-size: 5vw; 
+    color: #6f42c1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.p_prueba_vh {
+    font-size: 2vh; 
+    margin-top: 10px;
+    padding: 1vh;
+    border: 1px solid #fd7e14;
+}
