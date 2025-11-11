@@ -20,7 +20,6 @@ body {
 
 .grid-container {
     display: grid;
-
     padding-right: 50px;
     grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 10px;

@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header Repasar para futuras páginas */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/dia18/imagesfavicon.png/Gemini_Generated_Image_y3h4kny3h4kny3h4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-size: cover;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+}
+
+.header__tittle {
+    margin: 0;
+}
+
+.header__tittle-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #b02626;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ccc;
+    max-width: 600px;
+    width: 90%;/
+}
+
+.header__nav {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    /* ¡CRUCIAL para quitar los puntos! */
+    padding: 0;
+    margin: 0;
+}
+
+/* Se ajusta el selector para li y a */
+.header__nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    /* Padding de enlaces (Nivel 2) */
+    border-radius: 4px;
+    display: block;
+    /* Para que el padding y el hover funcionen bien */
+}
+
+.header__nav-list li a:hover {
+    color: #b02626;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header__nav-list li a.activo {
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+/* Main */
+
+main {
+    background-color: #e7e6dcc7;
+    padding: 15px;
+    min-height: calc(100vh - 200px);
+
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.content-section-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(250px, 1fr));
+    padding: 30px;
+    background-color: #eae9e9;
+    gap: 20px;
+}
+
+
+.fix-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease; 
+}
+
+
+.img-filter-1 { filter: blur(5px); }
+.img-filter-2 { filter: brightness(0.4); }
+.img-filter-3 { filter: contrast(200%); }
+.img-filter-4 { filter: drop-shadow(16px 16px 20px blue); }
+.img-filter-5 { filter: grayscale(50%); }
+.img-filter-6 { filter: hue-rotate(90deg); }
+.img-filter-7 { filter: invert(75%); }
+.img-filter-8 { filter: opacity(25%); }
+.img-filter-9 { filter: saturate(30%); }
+.img-filter-10 { filter: sepia(60%); }
+
+
+/* 📦 Div con Sombra (Box Shadow) */
+.shadow-box {
+    margin: 30px 15px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    /* Sombra de caja */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+}
+
+
+.shadow-text {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* Sombra de texto */
+    text-shadow: 2px 2px 4px rgba(176, 38, 38, 0.6); 
+    margin: 5px 0;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/dia18/imagesfavicon.png/Gemini_Generated_Image_y3h4kny3h4kny3h4.png);
+    color: rgb(44, 42, 42);
+    padding: 30px 20px;
+    gap: 15px;
+}
+
+.footer__link {
+    color: #232222;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__link:hover {
+    color: lightblue;
+}
+
+.footer__link {
+    font-weight: bold;
+}
