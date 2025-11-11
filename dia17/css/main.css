@@ -7,23 +7,28 @@
 body {
     margin: 40px;
 }
+.ejemplos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    padding: 30px;
+    height: 150px;
+    width: 300px;
+}
 
 
 /*Nivel 1-A */
 
 .grid-container {
     display: grid;
-    justify-content: left;
+
     padding-right: 50px;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
 }
 
-.ejemplos {
-    padding: 30px;
-}
+
 
 .grid-container div {
     background-color: #444;
