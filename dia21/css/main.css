@@ -145,12 +145,14 @@ main {
     border-radius: 0 0 4px 4px; 
 }
 
+.content-aside--h4{
+    color: white;
+}
 
 
 .content-aside--h4 a , .content-aside p {
     padding: 0 15px; 
     color: white;
-    
 }
 
 
