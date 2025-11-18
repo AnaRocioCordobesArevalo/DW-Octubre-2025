@@ -146,7 +146,8 @@ main {
 }
 
 
-.content-aside h4, .content-aside p {
+
+.content-aside--h4, .content-aside p {
     padding: 0 15px; 
     color: white;
 }
@@ -163,7 +164,7 @@ main {
 }
 
 
-/* Metadatos */
+/* Metadates */
 .content-section .meta-datos {
     font-size: 14px;
     color: #faf7f7;
@@ -284,6 +285,9 @@ main {
 
 /* Form          */
 .form-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 600px;
     height: auto;
     background-color: #101213;
@@ -318,7 +322,7 @@ main {
 }
 
 .form-register a {
-    color: white;
+    color: rgb(236, 131, 2);
     text-decoration: none;
 }
 
@@ -331,20 +335,15 @@ main {
 
 .controls__link {
     /* No funciona el cambio de color  */
-    font-weight: bold;
-    color: orange;
+    color: rgb(176, 72, 12);
+    align-items: center;
+    margin-left: 10px;
 
 }
 
-.controls__link:hover {
-    /* Esto se ha roto */
-    color: rgb(0, 0, 0);
-    background-color: rgb(209, 101, 25);
-    padding: 5px;
-    border-radius: 4px;
-}
 
-.form-register .bottons {
+
+.bottons {
     width: 80%;
     background: rgb(209, 101, 25);
     border: none;
