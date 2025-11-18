@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
+    background-color: #131111;
 }
 
 /* Header    Repasar para futuras páginas */
@@ -103,7 +103,7 @@ main {
     display: flex;
     gap: 20px;
     padding: 30px 5%;
-    background-color: #202020c7;
+    background-color: #000000c7;
     min-height: calc(100vh - 200px);
     align-items: stretch;
 }
@@ -147,9 +147,10 @@ main {
 
 
 
-.content-aside--h4, .content-aside p {
+.content-aside--h4 a , .content-aside p {
     padding: 0 15px; 
     color: white;
+    
 }
 
 
