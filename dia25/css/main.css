@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+body,
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header    Repasar para futuras páginas */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #050404;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-size: cover;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+}
+
+.header__tittle {
+    margin: 0;
+}
+
+.header__tittle-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #0f0f0f;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ccc;
+    max-width: 600px;
+    width: 90%;/
+}
+
+.header__nav {
+    /* Esta regla ya no necesita el gap/list-style: none, pero la dejamos. */
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    /* ¡CRUCIAL para quitar los puntos! */
+    padding: 0;
+    margin: 0;
+}
+
+
+.header__nav-list li a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    /* Padding de enlaces (Nivel 2) */
+    border-radius: 4px;
+    display: block;
+    /* Para que el padding y el hover funcionen bien */
+}
+
+.header__nav-list li a:hover {
+    color: #b02626;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header__nav-list li a.activo {
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+.header__logo {
+    width: 150px;
+    height: auto;
+    align-content: center;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #eaeaeac7;
+    padding: 15px;
+    min-height: calc(100vh - 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-section {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center; 
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Estilo básico del DOM */
+.cuadrado {
+    width: 200px;
+    height: 50px;
+    background-color: #0f0f0f;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+/*Estilo para el estado 'clicado' que se agregará con JS */
+.clicked {
+    background-color: rgb(7, 137, 46);
+    color: white;
+    padding: 15px;
+}
+
+/* Footer  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #050404;
+    color: rgb(236, 233, 233);
+    gap: 15px;
+}
+
+.footer__link {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__link:hover {
+    color: lightblue;
+}
+
+.footer__link {
+    font-weight: bold;
+}

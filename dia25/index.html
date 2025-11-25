@@ -14,7 +14,7 @@
 </head>
 
 <body>
-        <header class="header">
+    <header class="header">
         <h1 class="header__tittle">Colores</h1>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -27,51 +27,34 @@
         <img src="imagesfavicon.png/png-clipart-icon-no-background-icon-512x512-2x-color-shade-fan-removebg-preview.png"
             alt="Colours" class="header__logo">
     </header>
-    <hr>
-    <h3>1. Transición de tamaño (Ancho, Alto, Ambos)</h3>
-    <div class="container">
-        <div class="box l1-box1"></div>
-        <div class="box l1-box2"></div>
-        <div class="box l1-box3"></div>
-    </div>
+    <main class="main">
+        <section>
+            <h2>Ejercicios DOM</h2>
 
-    <hr>
-    <h3>2. Cambio de color y tamaño</h3>
-    <div class="container">
-        <div class="box l1-box4"></div>
-    </div>
+            <h3>1. Cambiar contenido</h3>
+            <p id="parrafo-a-cambiar">Este es el párrafo inicial.</p>
 
-    <hr>
-    <h3>3. Mostrar texto al pasar el ratón</h3>
-    <div class="container">
-        <div class="box l1-box5">
-            <span class="hidden-text">¡Hola!</span>
-        </div>
-    </div>
+            <h3>2. Lista dinámica</h3>
+            <ul id="lista-vacia">
+            </ul>
+
+            <h3>3. Evento de color</h3>
+            <div id="div-cambia-color" class="cuadrado">Haz clic para cambiar mi color</div>
+
+            <h3>4. Eliminar elemento</h3>
+            <div id="elemento-a-eliminar" class="cuadrado">¡Soy eliminable!</div>
+            <button id="boton-eliminar">Eliminar el elemento de arriba</button>
+
+            <h3>5. Contador</h3>
+            <p>Contador: <span id="contador-display">0</span></p>
+            <button id="boton-incrementar">Incrementar Contador</button>
 
 
-    <h2>Nivel 2: Animaciones con @keyframes</h2>
+            <div></div>
+        </section>
+    </main>
 
-    <hr>
-    <h3>1. Animaciones en bucle (Ancho, Rotación, Color)</h3>
-    <div class="container">
-        <div class="box l2-box1"></div>
-        <div class="box l2-box2"></div>
-        <div class="box l2-box3"></div>
-    </div>
-
-    <hr>
-    <h3>2. Texto parpadeante</h3>
-    <div class="container">
-        <p class="blinking-text">¡Estoy parpadeando!</p>
-    </div>
-
-    <hr>
-    <h3>3. Cuadro en movimiento (Izquierda-Derecha)</h3>
-    <div class="moving-box-container">
-        <div class="box l2-box4"></div>
-    </div>
-        <footer class="footer">
+    <footer class="footer">
         <a href="#" class="footer__link">Privacidad</a>
         <a href="#" class="footer__link">Términos</a>
         <a href="#" class="footer__link">Ayuda</a>

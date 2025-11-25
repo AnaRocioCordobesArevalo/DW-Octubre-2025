@@ -1,0 +1,35 @@
+/* Estilos básicos para el ejemplo del DOM */
+
+.cuadrado {
+    width: 200px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+/* Estilo para el estado 'clicado' que se agregará con JS */
+.clicked {
+    background-color: #4CAF50 !important; /* Verde */
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos de la plantilla original (ejemplo) */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.footer {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
