@@ -2,12 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(/dia20/imagesfavicon.png/photo-1557683316-973673baf926.jpeg);
+    background-color: #fff;
 }
 
-
-
-
+body,
+main {
+    max-width: 1200px;
+    margin: auto;
+}
 
 /* Header    Repasar para futuras páginas */
 
@@ -28,7 +30,6 @@ body {
 
 .header__tittle {
     margin: 0;
-    color: white;
 }
 
 .header__tittle-h2{
@@ -99,85 +100,28 @@ main {
 
 }
 
-.header__tittle--h4{
-    font-size: 22px;
-    margin-bottom: 30px;
-    text-align: center;
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
 }
 
 
-.form-register{
-    width: 400px;
-    background-color:#24303c;
-    padding: 40px;
-    margin: auto;
-    margin-top: 110px;
-    border-radius: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    box-sizing: border-box;
-    box-shadow: 7px 13px 37px #000;
-    
-}
-
-.controls{
-    width: 96%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    color: white;
-    
-}
-
-
-.form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.form-register a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.form-register a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.form-register .bottons {
-    width: 80%;
-    background: #1f53c5;
-    border:none;
-    padding: 20px;
-    color: white;
-    margin: 16px 0;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 4px;
-
-}
-
-/* Footer */
+/* Footer  */
 
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000;
-    color: rgb(44, 42, 42);
-    padding: 30px 20px;
+    background-color: #050404;
+    color: rgb(236, 233, 233);
     gap: 15px;
 }
 
 .footer__link {
-    color: #232222;
+    color: #f2f2f2;
     text-decoration: none;
     margin: 0 10px;
     font-family: 'Montserrat', sans-serif;
