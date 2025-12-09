@@ -108,6 +108,24 @@ main {
     align-items: center;
 }
 
+#container-nivel-tres {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#num1, #num2, #operator, #calculateBtn {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#result {
+    font-weight: bold;
+    color: #E91E63;
+    font-size: 18px;
+}
 
 /* Footer  */
 
