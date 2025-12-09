@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+body,
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header    Repasar para futuras páginas */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #050404;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-size: cover;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+}
+
+.header__tittle {
+    margin: 0;
+}
+
+.header__tittle-h2{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2em; 
+    color: #0f0f0f; 
+    font-weight: 700; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    padding-bottom: 5px; 
+    border-bottom: 3px solid #ccc; 
+    max-width: 600px; 
+    width: 90%; /
+}
+
+.header__nav {
+    /* Esta regla ya no necesita el gap/list-style: none, pero la dejamos. */
+    display: flex;
+    gap: 15px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.header__nav-list {
+    display: flex; 
+    gap: 20px; 
+    list-style: none; /* ¡CRUCIAL para quitar los puntos! */
+    padding: 0;
+    margin: 0;
+}
+
+
+.header__nav-list li a {
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px; /* Padding de enlaces (Nivel 2) */
+    border-radius: 4px;
+    display: block; /* Para que el padding y el hover funcionen bien */
+}
+
+.header__nav-list li a:hover {
+    color: #b02626;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header__nav-list li a.activo {
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+.header__logo {
+    width: 150px;
+    height: auto;
+    align-content: center;
+}
+
+/* Main */
+
+main {
+    background-color: #eaeaeac7;
+    padding: 15px;
+    min-height: calc(100vh - 200px);
+
+}
+
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.exercise {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Para que ocupen todo el ancho dentro de content-section */
+}
+
+/* Estilos Comunes para las Cajas */
+.box-style {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+}
+
+/* 1. Nivel 1 - Colores y Fondo */
+
+#color-text {
+    /* TRANSICIÓN: Aplicada para un cambio suave de color y fondo */
+    transition: color 0.5s ease, background-color 0.5s ease;
+    padding: 10px;
+}
+
+.dark-mode {
+    color: white;
+    background-color: black;
+}
+
+.light-mode {
+    color: black;
+    background-color: white;
+}
+
+/* 2. Nivel 1 - Ancho con Transición */
+
+#width-box {
+    width: 20vw; /* Ancho inicial */
+    /* TRANSICIÓN: Aplicada para un cambio suave de ancho */
+    transition: width 0.7s ease;
+    border: 2px solid #333;
+}
+
+.wide-width {
+    width: 80vw;
+}
+
+/* 3. Nivel 2 - Rotar y Escalar (Animación) */
+
+.square-box {
+    width: 100px;
+    height: 100px;
+    /* TRANSICIÓN: Aplicada para un cambio suave de transformaciones */
+    transition: transform 1s ease-in-out;
+}
+
+.animated {
+    /* Rotar 360 grados y escalar al doble */
+    transform: rotate(360deg) scale(2);
+}
+
+/* 4. Nivel 2 - Alternar Visibilidad (display: none/block) */
+/* NOTA: display: none/block no se puede transicionar,
+   por eso la transición se usa para el resto de propiedades (si las hubiera).
+   Para una transición suave, se usaría 'opacity' + 'visibility'. */
+
+.display-box-visible {
+    border: 2px solid green;
+}
+
+/* 5. Nivel 2 - Alternar Opacidad del Texto */
+
+.opacity-container {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+#opacity-text {
+    /* TRANSICIÓN: Aplicada para un cambio suave de opacidad */
+    transition: opacity 0.7s ease;
+    opacity: 1; /* Opacidad inicial */
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.text-hidden {
+    opacity: 0;
+}
+
+
+/* Footer  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #050404;
+    color: rgb(236, 233, 233);
+    gap: 15px;
+}
+
+.footer__link {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__link:hover {
+    color: lightblue;
+}
+
+.footer__link {
+    font-weight: bold;
+}
