@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv='x-UA-Compatible' content='IE=edge'>
+    <title> Page </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' type='image/png' href='imagesfavicon.png'>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <script src='js/main.js' defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__tittle">Colores</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='libros.html'>Libros</a></li>
+                <li><a href='destinos.html'>Destinos</a></li>
+                <li><a href='curso.html'>Cursos</a></li>
+            </ul>
+        </nav>
+        <img src="imagesfavicon.png/png-clipart-icon-no-background-icon-512x512-2x-color-shade-fan-removebg-preview.png"
+            alt="Colours" class="header__logo">
+    </header>
+    <main class="main">
+        <section class="content-section">
+            <h2>Nivel 1 : Interacción básica con el DOM y BOM</h2>
+            <!--NIVEL 1-->
+            <div class="button-container">
+        <button onclick="abrirVentana()">1. Abrir Nueva Ventana</button>
+
+        <button onclick="cerrarVentana()">2. Cerrar Ventana Actual</button>
+
+        <button onclick="moverVentana()">3. Mover Ventana a 0, 0</button>
+
+        <button onclick="redimensionarVentana()">4. Redimensionar Ventana a 600x400</button>
+
+        <button onclick="cambiarUbicacion()">5. Cambiar a Wikipedia (location)</button>
+    </div>
+
+    <p id="output-message"></p>
+        </section>
+        <section>
+            <h2>Nivel 2: Números Aleatorios</h2>
+            <!--NIVEL 2-->
+            <div id="container-niveldos">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+            <button id="changeNumbersBtn">Cambiar Números Aleatorios</button>
+
+            <hr>
+
+            <h2>Nivel 3: Calculadora</h2>
+            <div id="container-nivel-tres">
+                <input type="number" id="num1" placeholder="Primer número" value="10">
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" placeholder="Segundo número" value="5">
+                <button id="calculateBtn">Calcular</button>
+                <p>Resultado: <span id="result">0</span></p>
+            </div>
+    </main>
+    <footer class="footer">
+        <a href="#" class="footer__link">Privacidad</a>
+        <a href="#" class="footer__link">Términos</a>
+        <a href="#" class="footer__link">Ayuda</a>
+        <a href="#" class="footer__link">Redes</a>
+        <p class="footer__copyright">&copy; 2025 Setitas Web</p>
+    </footer>
+</body>
+
+</html>
