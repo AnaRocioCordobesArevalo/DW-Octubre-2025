@@ -14,7 +14,7 @@
 </head>
 
 <body>
-        <header class="header">
+    <header class="header">
         <h1 class="header__tittle">Colores</h1>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -29,7 +29,9 @@
     </header>
     <main class="main">
         <section class="content-section">
+            <!--Nivel 1: Cambios simples con eventos y Transiciones-->
             <div class="exercise">
+                <h2>Nivel 1</h2>
                 <p id="color-text">Este texto alternará color de texto y fondo.</p>
                 <button id="color-button">Alternar Colores</button>
             </div>
@@ -38,26 +40,43 @@
                 <div id="width-box" class="box-style">Ancho variable</div>
                 <button id="width-button">Alternar Ancho</button>
             </div>
-
+            <!--Nivel 2: Animaciones y visibilidad-->
             <div class="exercise">
+                <h2>Nivel 2</h2>
                 <div id="animation-box" class="box-style square-box">Animación</div>
                 <button id="animation-button">Alternar Animación</button>
             </div>
 
             <div class="exercise">
+
                 <div id="display-box" class="box-style display-box-visible">Visibilidad</div>
                 <button id="display-button">Alternar Visibilidad</button>
             </div>
-
             <div class="exercise">
                 <div class="box-style opacity-container">
                     <p id="opacity-text">Opacidad del texto variable</p>
                 </div>
                 <button id="opacity-button">Alternar Opacidad</button>
             </div>
+            <!--Nivel 2: Combina animaciones, dinámicas y manipulación avanzada-->
+            <div class="exercise">
+                <h2>Nivel 3</h2>
+                <div class="grid-container">
+                    <div class="grid">1</div>
+                    <div class="grid">2</div>
+                    <div class="grid">3</div>
+                    <div class="grid">4</div>
+                </div>
+                <button id="botonAleatorio">Celda Aleatoria</button>
+            </div>
+
+            <div class="exercise" style="position: relative; height: 300px;">
+                <div id="random-move-box" class="box-style square-box" style="position: absolute;">¡Muéveme!</div>
+                <button id="move-button" style="margin-top: 150px;">Mover Aleatoriamente</button>
+            </div>
         </section>
     </main>
-        <footer class="footer">
+    <footer class="footer">
         <a href="#" class="footer__link">Privacidad</a>
         <a href="#" class="footer__link">Términos</a>
         <a href="#" class="footer__link">Ayuda</a>

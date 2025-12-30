@@ -30,6 +30,7 @@ main {
 
 .header__tittle {
     margin: 0;
+    color: white;
 }
 
 .header__tittle-h2{
@@ -171,9 +172,7 @@ main {
 }
 
 /* 4. Nivel 2 - Alternar Visibilidad (display: none/block) */
-/* NOTA: display: none/block no se puede transicionar,
-   por eso la transición se usa para el resto de propiedades (si las hubiera).
-   Para una transición suave, se usaría 'opacity' + 'visibility'. */
+
 
 .display-box-visible {
     border: 2px solid green;
@@ -198,6 +197,31 @@ main {
 .text-hidden {
     opacity: 0;
 }
+
+/* Nivel 3 - Grid */
+.grid-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+/* Mejora para el movimiento aleatorio */
+#random-move-box {
+    transition: all 0.5s ease; /* Para que el movimiento sea fluido */
+    z-index: 10;
+}
+
 
 
 /* Footer  */
