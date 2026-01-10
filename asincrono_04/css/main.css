@@ -1,0 +1,206 @@
+
+
+/*BASE Y LAYOUT */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4f7aca;
+    width: 100%;
+    height: 300px;
+    border-bottom-right-radius: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.header__title {
+    margin: 0;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 4rem; 
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    word-break: break-word;
+}
+
+/*MAIN*/
+.main {
+    flex: 1; 
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 4rem; 
+}
+
+/* ACORDEÓN */
+.acordeon {
+    background-color: #ccc;
+    width: 100%; 
+    max-width: 800px; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px #b0b0b0, -5px -5px 10px #fcfcfc;
+}
+
+.acordeon .bloque {
+    background-color: #e8e8e8;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 20px #b0b0b0, -10px -10px 20px #fcfcfc;
+    border: #b0b0b0 solid 3px;
+}
+
+.acordeon .h2 {
+    background-color: #ccc;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px #b0b0b0, -5px -5px 10px #fcfcfc;
+    text-align: center; 
+}
+
+.acordeon .h2:hover {
+    box-shadow: inset 5px 5px 10px #fcfcfc, inset -5px -5px 10px #b0b0b0;
+    cursor: pointer;
+}
+
+.acordeon .contenido {
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+    text-align: center; 
+}
+
+.acordeon .bloque.activo .contenido {
+    height: fit-content;
+    padding: 1rem 0;
+}
+
+/*PESTAÑAS */
+.contenedor {
+    width: 100%;
+    max-width: 800px; 
+    background-color: #ccc;
+    padding: 1.5em;
+    border-radius: 1rem;
+}
+
+.contenedor .ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.contenedor .li {
+    list-style-type: none;
+}
+
+.contenedor .button {
+    padding: 1em;
+    margin: 0 0.5em;
+    border-radius: 8px;
+    transition: all .5s ease;
+    background-color: #e9e9e9;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenedor .button.activo {
+    background-color: #858585;
+    color: white;
+    font-weight: 600;
+}
+
+.contenedor .subcontenedor {
+    position: relative;
+    min-height: 150px; 
+}
+
+.contenedor .sub--contenido {
+    background-color: #b0b0b0;
+    width: 100%; 
+    padding: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
+    text-align: center;
+}
+
+.contenedor .sub--contenido.activo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* LIGHTBOX Y GRID*/
+.grid {
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar imágenes */
+    gap: 16px;
+}
+
+.grid .img {
+    width: 300px;
+    aspect-ratio: 2 / 3;
+    border-radius: 16px;
+    box-shadow: .5rem .5rem 1rem #bebebe, -.5rem -.5rem 1rem #ffffff;
+    transition: all .5s ease;
+    object-fit: cover;
+}
+
+/* FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4f7aca;
+    color: white;
+    padding: 30px 20px;
+    gap: 15px;
+    width: 100%;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

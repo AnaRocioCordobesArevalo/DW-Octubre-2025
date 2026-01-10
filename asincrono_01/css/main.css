@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* HEADER Metodologia BEM */
+.header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 32.5px 31px;
+}
+
+.header__ul{
+    display: flex;
+}
+.header__li{
+    list-style: none;
+}
+.header__a--nav{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 12px;
+    padding: 0 20px;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.header__a--nav:hover{
+    text-decoration: none;
+    font-size: 12px;
+    font-style: normal;
+    padding: 0 20px;
+    color: rgb(119, 135, 91);
+}
+
+.header__a--nav-active{
+    color: rgb(119, 135, 91);
+    font-size: 12px;
+    text-decoration: none;
+    font-style: normal;
+    padding: 0 20px;
+    letter-spacing: 3px;
+}
+
+.header__div--sidemenubutton{
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    position: relative;
+    background: none;
+}
+
+.header__div--sidemenubutton img{
+    width: 100%;
+
+}
+
+/* MAIN Metodologia BEM */
+
+.main{
+  margin: 0 16px;
+}
+
+.main__section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 230px;
+  gap: 8px;
+  max-width: 100vw;
+}
+
+.section__item{
+  overflow: hidden;
+  position: relative;
+}
+
+.section__item img{
+  width: 100%;
+}
+
+.section__item--img-tall{
+  grid-row: span 2;
+}
+
+.section__item--img-wide{
+  grid-column: span 2;
+}
+
+.section__item img:hover{   /* movimiento vertical while hovering */
+  transform: translateY(-5px);
+  transition: transform 0.4s ease;
+}
+
+
+/* SIDEMENU Metodologia BEM */
+
+.sidemenu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 420px;
+  background-color: rgb(255, 255, 255);
+  padding: 80px 60px 30px 60px;
+  text-align: center;
+  display: none;
+}
+
+/* .sidemenu en display:none para que no se vea por mientras, no se como hacer que funcione on-click. Me imagino que debe ser Java?*/
+
+.sidemenu__button--close{
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    position: absolute;
+    background: none;
+    top: 30px;
+    right: 20px;
+}
+
+.sidemenu__button--close img{
+  width: 100%;
+}
+
+.sidemenu > img{
+  margin-bottom: 30px;
+}
+
+.sidemenu > div{
+  margin-bottom: 30px;
+}
+
+/* FOOTER Metodologia BEM */
+
+.footer__div--top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 61px;
+    padding-top: 87px;
+}
+.footer__img{
+    height: 33px;
+    margin-bottom: 26px;
+}
+.footer__div--p{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+    font-size: 13px;
+    font-style: normal;
+}
+.footer__div--p-content{
+    color: rgb(132, 132, 132);
+    font-size: 15px;
+}
+.footer__div--bottom{
+    padding: 28.2px 0;
+}
+.footer__ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.footer__div--a{
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+}

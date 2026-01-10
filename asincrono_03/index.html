@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>APIs - Asincrono 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="imagesfavicon.png/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Promesas</h1>
+        <img src="imagesfavicon.png/icon.png" alt="Alien" class="header__logo">
+    </header>
+
+    <main class="main">
+        <section class="api-grid">
+            <article class="api-card">
+                <h2 class="api-card__title">D&D 5e SRD API</h2>
+                <form class="api-form" onsubmit="return false">
+                    <div class="api-form__group">
+                        <label for="razaDD" class="api-form__label">Nombre de la raza:</label>
+                        <input type="text" id="razaDD" class="api-form__input" list="option-races" placeholder="Ingrese raza">
+                        <datalist id="option-races">
+                            <option value="Dragonborn"></option>
+                            <option value="Dwarf"></option>
+                            <option value="Elf"></option>
+                            <option value="Gnome"></option>
+                        </datalist>
+                    </div>
+                    <button class="api-form__button" id="buttonSearchRace">Search</button>
+                </form>
+                <div class="api-result" id="resultadosDD">
+                    <p class="api-result__text" id="pAlignment"></p>
+                    <p class="api-result__text" id="pSize"></p>
+                    <p class="api-result__text" id="pSpeed"></p>
+                    <p class="api-result__text" id="pLanguages"></p>
+                    <p class="api-result__text" id="pLangDesc"></p>
+                </div>
+            </article>
+
+            <article class="api-card">
+                <h2 class="api-card__title">FakeStoreAPI</h2>
+                <div class="api-form">
+                    <select id="categories-select" class="api-form__select">
+                        <option value="">--Seleccione categoría--</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="jewelery">Jewelery</option>
+                    </select>
+                    <button class="api-form__button" id="buttonSearchProduct">Buscar</button>
+                </div>
+                <div class="api-result" id="resultadosStore"></div>
+            </article>
+
+            <article class="api-card">
+                <h2 class="api-card__title">PokeAPI - Pokedex</h2>
+                <form class="api-form" onsubmit="return false">
+                    <div class="api-form__group">
+                        <label for="pokeName" class="api-form__label">Nombre:</label>
+                        <input type="text" id="pokeName" class="api-form__input" placeholder="PokeName">
+                    </div>
+                    <div class="api-form__group">
+                        <label for="pokeID" class="api-form__label">ID:</label>
+                        <input type="text" id="pokeID" class="api-form__input" placeholder="PokeID">
+                    </div>
+                    <button class="api-form__button" id="buttonPokeSearch">Submit</button>
+                </form>
+                <div class="api-result" id="resultadosPoke">
+                    <p class="api-result__text" id="pNombre"></p>
+                    <p class="api-result__text" id="pId"></p>
+                    <p class="api-result__text" id="pWeight"></p>
+                    <p class="api-result__text" id="pHeight"></p>
+                    <div class="api-result__gallery">
+                        <img src="" alt="Normal" class="api-result__img" id="imgSprite">
+                        <img src="" alt="Shiny" class="api-result__img" id="imgSpriteShiny">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <a href="#" class="footer__link">Privacidad</a>
+            <a href="#" class="footer__link">Términos</a>
+            <a href="#" class="footer__link">Ayuda</a>
+            <a href="#" class="footer__link">Redes</a>
+        </nav>
+        <p class="footer__copyright">&copy; 2025 Asincrono 03 Web</p>
+    </footer>
+</body>
+</html>
