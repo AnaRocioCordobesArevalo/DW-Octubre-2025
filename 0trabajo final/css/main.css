@@ -1,11 +1,13 @@
 /*  GLOBALES  (No tocar)*/
-* { 
-    box-sizing: border-box; 
+html, body {
+    height: 100%; /* Obligamos a que el documento ocupe todo el alto */
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alineamos header, main y footer uno debajo de otro */
+    min-height: 100vh; /* El cuerpo siempre mide al menos el alto de la pantalla */
     font-family: 'Montserrat', sans-serif;
     background-color: #9579af;
     color: #333;
@@ -15,6 +17,10 @@ body {
 
 body.is-active {
     overflow: hidden;
+}
+
+main, .main {
+    flex: 1 0 auto; 
 }
 
 /* HEADER */
