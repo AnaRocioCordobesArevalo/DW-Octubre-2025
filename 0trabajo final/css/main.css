@@ -75,24 +75,78 @@ body.is-active {
     color: #741f74;
 }
 
-/*Icono de Iniciar Sesión o registro--casi se me olvida*/
+/*Icono de Iniciar Sesión o registro--casi se me olvida y buscar algo que resalte*/
 .header__user-icon {
-    font-size: 1.5rem; /* Ajusta el tamaño del icono */
+    font-size: 1.5rem; 
     display: flex;
     align-items: center;
     transition: color 0.3s;
 }
 
 .header__user-icon:hover {
-    color: #741f74; /* El color morado que usas en tu activo */
+    color: #741f74; 
 }
 
-/* Si prefieres usar una imagen descargada en lugar de Font Awesome */
+
 .header__user-icon img {
     height: 24px;
     width: 24px;
     object-fit: contain;
 }
+
+/*CARRUSEL*/
+
+.header__nav-item--dropdown {
+    position: relative; 
+}
+
+
+.header__submenu {
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #ffffff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 120px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+
+.header__nav-item--dropdown:hover .header__submenu {
+    visibility: visible;
+    opacity: 1;
+    top: 110%; /
+}
+
+
+.header__submenu li a {
+    padding: 8px 20px;
+    display: block;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header__submenu li a:hover {
+    background-color: #da76c1;
+    color: #080808;
+}
+
+
+
+
+
 
 /* MENU HAMBURGUESA */
 .hamburger {
@@ -112,7 +166,8 @@ body.is-active {
     border: 1px solid #111;
 }
 
-._layer {
+
+.hamburger__layer {
     background: #0c0b0b;
     width: 25px;
     height: 3px;
@@ -121,9 +176,18 @@ body.is-active {
     display: block; 
 }
 
-.hamburger.is-active .-top { transform: translateY(8px) rotate(45deg); }
-.hamburger.is-active .-mid { opacity: 0; }
-.hamburger.is-active .-bottom { transform: translateY(-8px) rotate(-45deg); }
+/* Modificadores para la animación de la X (no tocar) */
+.hamburger.is-active .hamburger__layer--top { 
+    transform: translateY(7px) rotate(45deg); 
+}
+
+.hamburger.is-active .hamburger__layer--mid { 
+    opacity: 0; 
+}
+
+.hamburger.is-active .hamburger__layer--bottom { 
+    transform: translateY(-7px) rotate(-45deg); 
+}
 
 .menuppal {
     background-color: rgba(158, 79, 168, 0.98);
@@ -517,17 +581,17 @@ body.is-active {
     align-items: center;
     max-width: 600px;
     width: 100%;
-    background-color: #d4a0e4;
+    background-color: #87b6d1;
     padding: 40px;
     margin: 60px auto; 
     border-radius: 10px;
-    box-shadow: 7px 13px 37px #ddb0d0;
+    box-shadow: 7px 13px 37px #2b4752;
     backdrop-filter: blur(8px);
 }
 
 .controls {
     width: 100%;
-    background: #eeaae3;
+    background: #b8ecc9;
     padding: 12px;
     margin-bottom: 16px;
     border: 1px solid #cc8ac1;
@@ -536,13 +600,14 @@ body.is-active {
 
 .bottons {
     width: 100%;
-    background: rgb(194, 91, 189);
+    background: rgb(122, 59, 119);
     border: none;
     padding: 15px;
     color: #fff;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+    align-content: center;
 }
 
 /* FOOTER*/
