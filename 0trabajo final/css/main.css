@@ -829,12 +829,20 @@ main,
 /*-------------------------------------------PODCAS----------------------------------------*/
 
 .parallax-tittle-podcast {
-    color: #faf9f9;
-    font-size: 3rem;
+    color: #ffffff;
+    font-size: 1.8rem; 
     font-weight: 700;
-    letter-spacing: 4px;
-    margin: 0;
+    margin-bottom: 25px; 
+    text-align: left;
     
+}
+
+.parallax-tittle-andar {
+    color: #ffffff;
+    font-size: 1.8rem; 
+    font-weight: 700;
+    margin-bottom: 25px; 
+    text-align: left;
 }
 
 .section-4 {
@@ -862,6 +870,12 @@ main,
     height: 100%;
     
 
+}
+
+iframe[data-testid="embed-iframe"] {
+    display: block;
+    margin: 0 auto; /* Centra el reproductor si el contenedor es más ancho */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Le da profundidad para que resalte del fondo negro */
 }
 
 /*------------------------------------------FOOTER----------------------------------------------*/
