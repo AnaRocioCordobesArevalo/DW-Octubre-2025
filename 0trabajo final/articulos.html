@@ -7,7 +7,7 @@
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='icon' type='image/png'
-        href='imagesfavicon.png/upswing-circular-spiral-stairs-ladder-260nw-2452084109-removebg-preview.png'>
+        href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <img src="imagesfavicon.png/upswing-circular-spiral-stairs-ladder-260nw-2452084109-removebg-preview.png"
+                <img src="images/logo.png"
                     alt="Logo" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
@@ -41,7 +41,7 @@
                     <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="registro.html" class="header__user-icon">
-                            <img src="imagesfavicon.png/icono-de-usuario-predeterminado-vectores-imagen-perfil-avatar-predeterminada-vectorial-medios-sociales-retrato-182347582-removebg-preview.png"
+                            <img src="images/icono-usuario.png"
                                 alt="Usuario">
                         </a></li>
                 </ul>
@@ -74,11 +74,11 @@
             <h3>Título del Gran Lanzamiento 2026</h3>
         </div>
     </a>
-    <a href="articulo2.html" class="featured-item">
-        <img src="imagen2.jpg" alt="Articulo Destacado">
+    <a href="podcast.html" class="featured-item">
+        <img src="images/andar-2.jpg" alt="Articulo Destacado">
         <div class="featured-item__info">
             <span class="tag">#podcast</span>
-            <h3>Podcast Especial: Futuro de la industria</h3>
+            <h3>Podcast : Andar</h3>
         </div>
     </a>
     <a href="articulo3.html" class="featured-item">
@@ -99,7 +99,7 @@
                 <article class="news-card">
                     <div class="news-card__container">
                         <div class="news-card__image">
-                            <img src="https://via.placeholder.com/280x180" alt="Wild Growth">
+                            <img src="images/annus-ovi.jpg" alt="Wild Growth">
                         </div>
                         <div class="news-card__content">
                             <p class="news-card__subtitle">Raíces carcomidas <span class="news-card__badge-id">8</span></p>
@@ -120,28 +120,64 @@
                 </div>
             </section>
 
-            <aside class="sidebar">
-                <h3 class="sidebar__title">#análisis</h3>
-                <div class="sidebar__grid">
-                    <div class="analysis-box">
-                        <img src="https://via.placeholder.com/200x200" alt="Dispatch">
-                        <div class="analysis-box__info">
-                            <span class="tag">#análisis</span>
-                            <h3>Dispatch</h3>
+            <aside class="sidebar-analysis">
+                <h2 class="analysis-header">#análisis</h2>
+                <!--Articulo de lumines arise-->
+                <article class="analysis-item-container">
+                    <a href="articulo-lumines.html" class="news-card__link" title="Leer análisis: Sentidos aumentados">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/lumnies-3.webp" type="image/">
+                                <img src="images/lumines-3.jpg" alt="Analisis de Lumines Arise" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Sentidos aumentados</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="analysis-box">
-                        <img src="https://via.placeholder.com/200x200" alt="Birdcage">
-                        <div class="analysis-box__info">
-                            <span class="tag">#análisis</span>
-                            <h3>Birdcage</h3>
+                    </a>
+                </article><!--Articulo de processor-->
+                <article class="analysis-item-container">
+                    <a href="articulo-lumines.html" class="news-card__link"
+                        title="Leer análisis: Un juego que lo tuvo todo">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/processor.jpg" type="image/">
+                                <img src="images/possesor.jpg" alt="Analisis de Processor" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Un juego que lo tuvo todo</h3>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="promo-box">
-                    <img src="https://via.placeholder.com/400x300" alt="Podcast Any%">
-                </div>
+                    </a>
+                </article> <!--Articulo de Death Howel-->
+                <article class="analysis-item-container">
+                    <a href="#" class="news-card__link"
+                        title="Leer análisis: Un soulslike con cartas">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/death.jpg" type="image/">
+                                <img src="images/death.jpg" alt="Analisis de Death Howel" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Un soulslike con cartas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="analysis-item-container">
+                    <a href="articulo-lumines.html" class="news-card__link"
+                        title="Leer análisis: Ninja Gaiden: Ragebound">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/ninja-gaiden.png" type="image/">
+                                <img src="images/ninja-gaiden.png" alt="Analisis de Ninja Gaiden: Ragebound" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Ninja Gaiden: Ragebound</h3>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             </aside>
 
         </div>

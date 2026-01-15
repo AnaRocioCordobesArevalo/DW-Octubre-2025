@@ -6,8 +6,8 @@
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png'
-        href='imagesfavicon.png/upswing-circular-spiral-stairs-ladder-260nw-2452084109-removebg-preview.png'>
+
+    <link rel='icon' type='image/png' href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,187 +18,193 @@
 </head>
 
 <body>
+    <!--Header-->
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <img src="imagesfavicon.png/upswing-circular-spiral-stairs-ladder-260nw-2452084109-removebg-preview.png"
-                    alt="Logo" class="header__logo">
+                <img src="images/logo.png" alt="Logo Catabasis Games" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
-            <nav class="header__nav">
+
+            <nav class="header__nav" title="Navegación principal">
                 <ul class="header__nav-list">
-                    <li><a href='index.html' class="activo">INICIO</a></li>
-                    <li class="header__nav-item header__nav-item--dropdown">
-                        <a href="articulos.html">ARTICULOS</a>
-                        <ul class="header__submenu">
-                            <li><a href="podcast.html">PODCAST</a></li>
-                            <li><a href="noticias.html">NOTICIAS</a></li>
-                        </ul>
-                    </li>
+                    <li>
+                        <a href="index.html" class="activo" title="Ir a la página de inicio">INICIO</a>
                     </li>
 
-                    <li><a href="catalogo.html">CATALOGO</a></li>
-                    <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="registro.html" class="header__user-icon">
-                            <img src="imagesfavicon.png/icono-de-usuario-predeterminado-vectores-imagen-perfil-avatar-predeterminada-vectorial-medios-sociales-retrato-182347582-removebg-preview.png"
-                                alt="Usuario">
-                        </a></li>
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <a href="articulos.html" title="Ver todos los artículos">ARTÍCULOS</a>
+                        <ul class="header__submenu"> <!--Submenu-->
+                            <li><a href="podcast.html" title="Escuchar nuestros podcasts">PODCAST</a></li>
+                            <li><a href="noticias.html" title="Leer últimas noticias">NOTICIAS</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="catalogo.html" title="Consultar catálogo de juegos">CATÁLOGO</a></li>
+                    <li><a href="sobre_nosotros.html" title="Conocer al equipo">SOBRE NOSOTROS</a></li>
+                    <li><a href="contacto.html" title="Formulario de contacto">CONTACTO</a></li>
+
+                    <li>
+                        <a href="registro.html" class="header__user-icon" title="Acceder a mi perfil de usuario">
+                            <picture>
+                                <source srcset="images/icono-usuario.png" type="image/webp">
+                                <img src="images/icono-usuario.png" alt="Perfil de Usuario" loading="lazy">
+                            </picture>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="hamburger">
-            <div class="hamburger__layer hamburger__layer--top"></div>
-            <div class="hamburger__layer hamburger__layer--mid"></div>
-            <div class="hamburger__layer hamburger__layer--bottom"></div>
-        </div>
-        <nav class="menuppal">
+        <!--Hamburguesa-->
+        <button class="hamburger" title="Abrir menú móvil">
+            <span class="hamburger__layer hamburger__layer--top"></span>
+            <span class="hamburger__layer hamburger__layer--mid"></span>
+            <span class="hamburger__layer hamburger__layer--bottom"></span>
+        </button>
+
+        <nav class="menuppal" title="Menú lateral móvil">
             <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="articulos.html">ARTICULOS</a></li>
-                <li><a href="catalogo.html">CATALOGO</a></li>
-                <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="index.html" title="Ir a la página de inicio">INICIO</a></li>
+                <li><a href="articulos.html" title="Ver todos los artículos">ARTÍCULOS</a></li>
+                <li><a href="catalogo.html" title="Consultar catálogo de juegos">CATÁLOGO</a></li>
+                <li><a href="sobre_nosotros.html" title="Conocer al equipo">SOBRE NOSOTROS</a></li>
+                <li><a href="contacto.html" title="Formulario de contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-container">
         <article class="post">
-            <h2 class="post__title">Yo había matado la quinta LUNA</h2>
-            <p class="post__meta">Publicado el 20 de Mayo, 2025 | Por Admin</p>
-            <img src="https://via.placeholder.com/800x400" alt="Banner Juego" class="post__image">
+            <h2 class="post__title">Los juegos más esperados del año</h2>
+            <p class="post__meta">Publicado el 2 de ENERO, 2026 </p>
+
+            <picture class="post__picture">
+                <source srcset="images/juegos2026.webp" type="image/webp">
+                <img src="images/juegos2026.webp" alt="Captura de los juegos más esperados del 2026."
+                    class="post__image" loading="lazy">
+            </picture>
+
             <div class="post__parrafo">
-                <p>Después de tantos años, Sam Eng demuestra estar a la altura de las altísimas expectativas y firma un
-                    juego único, profundo y radicalmente inusual.</p>
+                <p>
+                    Después de tantos años, Sam Eng demuestra estar a la altura de las altísimas expectativas y firma un
+                    juego único, profundo y radicalmente inusual.
+                </p>
             </div>
-            <a href="#" class="btn-read-more">Leer más...</a>
-        </article>
 
+            <a href="articulo-esperados.html" class="btn-read-more"
+                title="Seguir leyendo sobre los juegos más esperados de este año">Leer más...</a>
+        </article>
+        <!--Catalogo-->
         <article class="post-article__image">
-            <img src="imagesfavicon.png/Mockup-open-spreads-compo-1536x1152.jpg" alt="revistas" class="post__image">
-            <a href="catalogo.html" class="button__catalogo">Catalogo</a>
+            <picture>
+                <source srcset="images/Mockup-open-spreads-compo-1536x1152.jpg" type="image/webp">
+                <img src="images/Mockup-open-spreads-compo-1536x1152.jpg"
+                    alt="Muestra de revistas físicas disponibles en catálogo" class="post__image" loading="lazy">
+            </picture>
+            <a href="catalogo.html" class="button__catalogo" title="Ir al catálogo completo de productos">Catálogo</a>
         </article>
 
         <div class="blog-layout">
             <section class="news-section">
+                <h2 class="news-section__main-title">Últimas Noticias</h2>
+
                 <article class="news-card">
-                    <a href="articulo-reanimal.html" class="news-card__link">
+                    <a href="articulo-reanimal.html" class="news-card__link" title="Leer detalles sobre Reanimals">
                         <div class="news-card__image">
-                            <img src="imagesfavicon.png/scopri-demo-reanimal-fenomeno-steam-next-fest-aspetta-ora-v3-834289-1280x720.webp"
-                                alt="Reanimal">
-                            <span class="news-card__badge">6</span>
+                            <picture>
+                                <source srcset="images/reanimal.webp" type="image/webp">
+                                <img src="images/reanimal.jpg" alt="Imagen del juego Reanimals" loading="lazy">
+                            </picture>
+                            
                         </div>
                         <div class="news-card__content">
-                            <p class="news-card__meta">8 ENERO 2026 <span class="author">por JUAN SALAS</span></p>
-                            <h2 class="news-card__title">Reanimals</h2>
+                            <p class="news-card__meta">8 ENERO 2026 por ROMERO VARGAS</p>
+                            <h3 class="news-card__title">Reanimals</h3>
                             <p class="news-card__excerpt">Los principales detalles de Reanimal, una aventura de horror
-                                cooperativa que promete ser todo un caramelito </p>
+                                cooperativa.</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="news-card">
-                    <a href="#" class="news-card__link">
+                <article class="news-card"><!--Articulos Anuus Ovni-->
+                    <a href="#" class="news-card__link" title="Leer detalles sobre Annus Ovi">
                         <div class="news-card__image">
-                            <img src="imagesfavicon.png/annus-ovi-ico.jpg" alt="Nuclear Throne">
-                            <span class="news-card__badge">0</span>
+                            <picture>
+                                <source srcset="images/annus-ovi.jpg" type="image/webp">
+                                <img src="images/annus-ovi.jpg" alt="Imagen de Annus Ovi" loading="lazy">
+                            </picture>
+                            
                         </div>
                         <div class="news-card__content">
-                            <p class="news-card__meta">2 ENERO 2026 <span class="author">por PEP SÀNCHEZ</span></p>
-                            <h2 class="news-card__title">Año del Huevo.: A por las C-skins de Melting y Cuz</h2>
-                            <p class="news-card__excerpt"> «Todo el mundo ha visto un huevo, pero, ¿cómo
-                                se movería por su cuenta, si pudieran?»</p>
+                            <p class="news-card__meta">2 ENERO 2026 <span class="author">por PAQUITA SALAS</span></p>
+                            <h3 class="news-card__title">Annus Ovi</h3>
+                            <p class="news-card__excerpt">Juegos «protagonizados» por huevos,.</p>
                         </div>
                     </a>
                 </article>
             </section>
-
+            <!--Analisis-->
             <aside class="sidebar-analysis">
                 <h2 class="analysis-header">#análisis</h2>
-
-                <a href="articulo-reanimal.html" class="news-card__link">
-                    <div class="analysis-item">
-                        <img src="imagesfavicon.png/page_bg_raw.jpg" alt="Analisis de Lumines Arise">
-                        <div class="analysis-item__info">
-                            <h2 class="analysis-item__title">Sentidos aumentados</h2>
+                <!--Articulo de lumines arise-->
+                <article class="analysis-item-container">
+                    <a href="articulo-lumines.html" class="news-card__link" title="Leer análisis: Sentidos aumentados">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/lumnies-3.webp" type="image/">
+                                <img src="images/lumines-3.jpg" alt="Analisis de Lumines Arise" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Sentidos aumentados</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-
-                <a href="articulo-reanimal.html" class="news-card__link">
-                    <div class="analysis-item">
-                        <img src="imagesfavicon.png/capsule_616x353.jpg" alt="Analisis de Possessor">
-                        <div class="analysis-item__info">
-                            <h2 class="analysis-item__title">Un juego que lo tenía todo</h2>
+                    </a>
+                </article><!--Articulo de processor-->
+                <article class="analysis-item-container">
+                    <a href="articulo-lumines.html" class="news-card__link"
+                        title="Leer análisis: Un juego que lo tuvo todo">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/processor.jpg" type="image/">
+                                <img src="images/possesor.jpg" alt="Analisis de Processor" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Un juego que lo tuvo todo</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </aside>
-        </div>
-        <article class="post-article__image">
-            <img src="imagesfavicon.png/Mockup-open-spreads-compo-1536x1152.jpg" alt="revistas" class="post__image">
-            <a href="catalogo.html" class="button__catalogo">Catalogo</a>
-        </article>
-
-        <div class="blog-layout">
-            <section class="news-section">
-                <article class="news-card">
-                    <a href="articulo-reanimal.html" class="news-card__link">
-                        <div class="news-card__image">
-                            <img src="imagesfavicon.png/scopri-demo-reanimal-fenomeno-steam-next-fest-aspetta-ora-v3-834289-1280x720.webp"
-                                alt="Reanimal">
-                            <span class="news-card__badge">6</span>
-                        </div>
-                        <div class="news-card__content">
-                            <p class="news-card__meta">8 ENERO 2026 <span class="author">por JUAN SALAS</span></p>
-                            <h2 class="news-card__title">Reanimals</h2>
-                            <p class="news-card__excerpt">Los principales detalles de Reanimal, una aventura de horror
-                                cooperativa que promete ser todo un caramelito </p>
+                    </a>
+                </article> <!--Articulo de Death Howel-->
+                <article class="analysis-item-container">
+                    <a href="#" class="news-card__link"
+                        title="Leer análisis: Un soulslike con cartas">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/death.jpg" type="image/">
+                                <img src="images/death.jpg" alt="Analisis de Death Howel" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Un soulslike con cartas</h3>
+                            </div>
                         </div>
                     </a>
                 </article>
-
-                <article class="news-card">
-                    <a href="#" class="news-card__link">
-                        <div class="news-card__image">
-                            <img src="imagesfavicon.png/annus-ovi-ico.jpg" alt="Nuclear Throne">
-                            <span class="news-card__badge">0</span>
-                        </div>
-                        <div class="news-card__content">
-                            <p class="news-card__meta">2 ENERO 2026 <span class="author">por PEP SÀNCHEZ</span></p>
-                            <h2 class="news-card__title">Año del Huevo.: A por las C-skins de Melting y Cuz</h2>
-                            <p class="news-card__excerpt"> «Todo el mundo ha visto un huevo, pero, ¿cómo
-                                se movería por su cuenta, si pudieran?»</p>
+                <article class="analysis-item-container">
+                    <a href="articulo-lumines.html" class="news-card__link"
+                        title="Leer análisis: Ninja Gaiden: Ragebound">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/ninja-gaiden.png" type="image/">
+                                <img src="images/ninja-gaiden.png" alt="Analisis de Ninja Gaiden: Ragebound" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Ninja Gaiden: Ragebound</h3>
+                            </div>
                         </div>
                     </a>
                 </article>
-            </section>
-
-            <aside class="sidebar-analysis">
-                <h2 class="analysis-header">#análisis</h2>
-
-                <a href="articulo-lumines.html" class="news-card__link">
-                    <div class="analysis-item">
-                        <img src="imagesfavicon.png/page_bg_raw.jpg" alt="Analisis de Lumines Arise">
-                        <div class="analysis-item__info">
-                            <h2 class="analysis-item__title">Sentidos aumentados</h2>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="articulo-reanimal.html" class="news-card__link">
-                    <div class="analysis-item">
-                        <img src="imagesfavicon.png/capsule_616x353.jpg" alt="Analisis de Possessor">
-                        <div class="analysis-item__info">
-                            <h2 class="analysis-item__title">Un juego que lo tenía todo</h2>
-                        </div>
-                    </div>
-                </a>
             </aside>
         </div>
     </main>
-
 
 
     <footer class="footer">
