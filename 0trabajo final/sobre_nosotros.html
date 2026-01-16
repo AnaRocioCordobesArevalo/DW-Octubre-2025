@@ -6,8 +6,7 @@
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png'
-        href='images/logo.png'>
+    <link rel='icon' type='image/png' href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,43 +17,42 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"> <!--Header-->
         <div class="header__container">
             <div class="header__brand">
-                <img src="images/logo.png"
-                    alt="Logo" class="header__logo">
+                <img src="images/logo.png" alt="Logo" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href='index.html' class="activo">INICIO</a></li>
                     <li class="header__nav-item header__nav-item--dropdown">
-                        <a href="articulos.html">ARTICULOS</a>
+                        <a href="noticias.html">NOTICIAS</a>
                         <ul class="header__submenu">
                             <li><a href="podcast.html">PODCAST</a></li>
-                            <li><a href="noticias.html">NOTICIAS</a></li>
+                            <li><a href="articulos.html">ARTICULOS</a></li>
                         </ul>
                     </li>
-                    </li>
+
 
                     <li><a href="catalogo.html">CATALOGO</a></li>
                     <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="registro.html" class="header__user-icon">
-                            <img src="images/icono-usuario.png"
-                                alt="Usuario">
+                            <img src="images/icono-usuario.png" alt="Usuario">
                         </a></li>
                 </ul>
             </nav>
         </div>
-        <div class="hamburger">
+        <div class="hamburger"> <!--Menu Hamburguesa-->
             <div class="hamburger__layer hamburger__layer--top"></div>
             <div class="hamburger__layer hamburger__layer--mid"></div>
             <div class="hamburger__layer hamburger__layer--bottom"></div>
         </div>
-        <nav class="menuppal">
+        <nav class="menuppal"> <!--Submenu-->
             <ul>
                 <li><a href="index.html">INICIO</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
                 <li><a href="articulos.html">ARTICULOS</a></li>
                 <li><a href="catalogo.html">CATALOGO</a></li>
                 <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
@@ -64,24 +62,37 @@
     </header>
     <!--Main-->
     <main class="main-container">
-        <!--Descripción-->
-        <section class="content-main">
-            <article class="post__content">
-                <h2 class="post__title">¿Qué es Catabasis?</h2>
-                <p class="post__parrafo">CATABASIS es un ambicioso proyecto editorial independiente dedicado al
-                    videojuego como artefacto cultural,
-                    el cual busca crear un diálogo con otras disciplinas y humanizar el desarrollo de videojuegos, dando
-                    voz a sus protagonistas.
+        <section class="manifesto">
+            <header class="manifesto__header">
+                <h2 class="manifesto__main-title">Manifiesto</h2>
+            </header>
 
-                    De periodicidad semestral y carácter atemporal, CATABASIS es una revista de videojuegos fruto del
-                    trabajo
-                    de un talentoso y amplio equipo de redactores y artistas que aúna experiencia, frescura y fervor por
-                    el medio. CATABASIS es, sobre todo, amor por el videojuego.
+            <div class="manifesto__container">
+                <div class="manifesto__text-content">
+                    <h3 class="manifesto__subtitle">¿Qué es CATEBASIS?</h3>
+                    <p class="manifesto__paragraph">
+                        Mucho más que videojuegos. Cultura, desarrollo y actualidad.
+                    </p>
+                    <p class="manifesto__paragraph">
+                        Bienvenidos a CATABASIS. En nuestra web exploramos el videojuego desde todos sus ángulos: desde
+                        la noticia inmediata y el artículo de opinión, hasta el proceso creativo detrás de cada título.
+                    </p>
+                    <p>
+                        Tras siete años de experiencia en el sector editorial, seguimos apostando por el papel y la
+                        profundidad con nuestra revista independiente, un proyecto ambicioso diseñado para conectar el
+                        videojuego con el arte y la sociedad. Infórmate con nosotros, reflexiona con nuestros autores y
+                        colecciona nuestras ediciones físicas.
+                    </p>
+                </div>
 
-                    Actualmente, el proyecto acaba de terminar su cuarto año de vida con ocho revistas editadas, siendo
-                    reconocidos en los Premios Devuego 2023 y 2024 como mejor revista en España.</p>
-
-            </article>
+                <figure class="manifesto__image-wrapper">
+                    <picture>
+                        <source srcset="images/logo.png" type="image/jpg">
+                        <img src="images/logo.png" alt="Logo de LOOP: Símbolo de infinito" class="manifesto__logo"
+                            loading="lazy">
+                    </picture>
+                </figure>
+            </div>
         </section>
     </main>
     <footer class="footer">

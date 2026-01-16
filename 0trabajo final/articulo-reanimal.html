@@ -6,8 +6,7 @@
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png'
-        href='images/logo.png'>
+    <link rel='icon' type='image/png' href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,43 +17,42 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"> <!--Header-->
         <div class="header__container">
             <div class="header__brand">
-                <img src="images/logo.png"
-                    alt="Logo" class="header__logo">
+                <img src="images/logo.png" alt="Logo" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href='index.html' class="activo">INICIO</a></li>
                     <li class="header__nav-item header__nav-item--dropdown">
-                        <a href="articulos.html">ARTICULOS</a>
+                        <a href="noticias.html">NOTICIAS</a>
                         <ul class="header__submenu">
                             <li><a href="podcast.html">PODCAST</a></li>
-                            <li><a href="noticias.html">NOTICIAS</a></li>
+                            <li><a href="articulos.html">ARTICULOS</a></li>
                         </ul>
                     </li>
-                    </li>
+                    
 
                     <li><a href="catalogo.html">CATALOGO</a></li>
                     <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="registro.html" class="header__user-icon">
-                            <img src="images/icono-usuario.png"
-                                alt="Usuario">
+                            <img src="images/icono-usuario.png" alt="Usuario">
                         </a></li>
                 </ul>
             </nav>
         </div>
-        <div class="hamburger">
+        <div class="hamburger"> <!--Menu Hamburguesa-->
             <div class="hamburger__layer hamburger__layer--top"></div>
             <div class="hamburger__layer hamburger__layer--mid"></div>
             <div class="hamburger__layer hamburger__layer--bottom"></div>
         </div>
-        <nav class="menuppal">
+        <nav class="menuppal"> <!--Submenu-->
             <ul>
                 <li><a href="index.html">INICIO</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
                 <li><a href="articulos.html">ARTICULOS</a></li>
                 <li><a href="catalogo.html">CATALOGO</a></li>
                 <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
@@ -64,47 +62,85 @@
     </header>
 
     <main class="main-parallax">
-        <section class="parallax-section section-1">
-            
-                <h2 class="parallax-tittle">REANIMAL</h2>
-            
+        <section class="parallax-section section-1" title="Imagen de cabecera de Reanimal">
+            <h2 class="parallax-tittle-reanimal">REANIMAL</h2>
         </section>
 
         <section class="article-parallax-container">
             <div class="article-content-inner">
-
-
-                <div class="article-text-block">
-                    <p>
-                        No hace falta mucho para describir este juego, tampoco para convencer a su público objetivo de
-                        que merece la pena que se lance a por él sin dudarlo: un juego cooperativo de terror del estudio
-                        que desarrolló las dos primeras entregas de Little Nightmares. No hace falta decir nada más,
-                        como dijo en su día cierto entrenador alemán. Las comparaciones son odiosas, pero también
-                        inevitables; de la misma forma que Life is Strange: Double Exposure y Lost Records: Bloom & Rage
-                        coincidieron, lo harán ahora Little Nightmares 3 y Reanimal, veremos si funciona mejor la
-                        entrega oficial o el heredero espiritual.
-                    </p>
-
-                </div>
+                <article class="article-text-block">
+                    <p>Días atras comentaba las sensaciones encontradas...</p>
+                </article>
             </div>
-        </section>
-        <!--You Tube-->
+        </section> <!--Video-->
         <section class="parallax-section section-2">
-            <div class="parallax-content" style="width: 80%; max-width: 900px; background: none; border: none;">
+            <div class="video-container-box">
                 <div class="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/xCQo60PWWYA" title="REANIMAL Trailer" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    <iframe src="https://www.youtube.com/embed/xCQo60PWWYA"
+                        title="Tráiler oficial de presentación de REANIMAL" allowfullscreen loading="lazy">
                     </iframe>
                 </div>
             </div>
         </section>
 
+
         <section class="article-parallax-container">
-            <div class="article-content-inner" style="text-align: center; padding: 40px 0;">
-                <a href="articulos.html" class="btn-read-more">Volver a Artículos</a>
+            <div class="article-flex-layout">   <!--Carrusel de imagenes-->
+                <section class="carousel-section">
+                    <h2 class="carousel-title">Galería de Imágenes</h2>
+
+                    <div class="carousel-wrapper">
+                        <div class="carousel-viewport">
+                            <div class="carousel-track" id="carouselTrack">
+
+                                <article class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/re1.webp" type="image/webp">
+                                        <img src="images/re1.webp" alt="Descripción de la imagen 1" loading="lazy">
+                                    </picture>
+                                </article>
+
+                                <article class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/re2.webp" type="image/webp">
+                                        <img src="images/re2.webp" alt="Descripción de la imagen 2" loading="lazy">
+                                    </picture>
+                                </article>
+
+                                <article class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/re3.webp" type="image/webp">
+                                        <img src="images/re3.webp" alt="Descripción de la imagen 3" loading="lazy">
+                                    </picture>
+                                </article>
+
+                                <article class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/re4.webp" type="image/webp">
+                                        <img src="images/re4.webp" alt="Descripción de la imagen 3" loading="lazy">
+                                    </picture>
+                                </article>
+                                <article class="carousel-item">
+                                    <picture>
+                                        <source srcset="images/re5.webp" type="image/webp">
+                                        <img src="images/re5.webp" alt="Descripción de la imagen 3" loading="lazy">
+                                    </picture>
+                                </article>
+
+                            </div>
+                        </div>
+                            <!--Botones del Carrusel-->
+                        <button class="carousel-btn prev" id="btnPrev" title="Ver imagen anterior"
+                            aria-label="Anterior">&#10094;</button>
+                        <button class="carousel-btn next" id="btnNext" title="Ver imagen siguiente"
+                            aria-label="Siguiente">&#10095;</button>
+                    </div>
+                </section>
             </div>
         </section>
+
+
+
     </main>
     <footer class="footer">
         <a href="#" class="footer__link">Privacidad</a>

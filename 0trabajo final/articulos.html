@@ -6,8 +6,7 @@
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png'
-        href='images/logo.png'>
+    <link rel='icon' type='image/png' href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,43 +17,42 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"> <!--Header-->
         <div class="header__container">
             <div class="header__brand">
-                <img src="images/logo.png"
-                    alt="Logo" class="header__logo">
+                <img src="images/logo.png" alt="Logo" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href='index.html' class="activo">INICIO</a></li>
                     <li class="header__nav-item header__nav-item--dropdown">
-                        <a href="articulos.html">ARTICULOS</a>
+                        <a href="noticias.html">NOTICIAS</a>
                         <ul class="header__submenu">
                             <li><a href="podcast.html">PODCAST</a></li>
-                            <li><a href="noticias.html">NOTICIAS</a></li>
+                            <li><a href="articulos.html">ARTICULOS</a></li>
                         </ul>
                     </li>
-                    </li>
+
 
                     <li><a href="catalogo.html">CATALOGO</a></li>
                     <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="registro.html" class="header__user-icon">
-                            <img src="images/icono-usuario.png"
-                                alt="Usuario">
+                            <img src="images/icono-usuario.png" alt="Usuario">
                         </a></li>
                 </ul>
             </nav>
         </div>
-        <div class="hamburger">
+        <div class="hamburger"> <!--Menu Hamburguesa-->
             <div class="hamburger__layer hamburger__layer--top"></div>
             <div class="hamburger__layer hamburger__layer--mid"></div>
             <div class="hamburger__layer hamburger__layer--bottom"></div>
         </div>
-        <nav class="menuppal">
+        <nav class="menuppal"> <!--Submenu-->
             <ul>
                 <li><a href="index.html">INICIO</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
                 <li><a href="articulos.html">ARTICULOS</a></li>
                 <li><a href="catalogo.html">CATALOGO</a></li>
                 <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
@@ -63,79 +61,148 @@
         </nav>
     </header>
 
-<body>
 
-<main class="main-container">
-    <section class="featured-grid">
-    <a href="articulo1.html" class="featured-item">
-        <img src="imagen1.jpg" alt="Articulo Destacado">
-        <div class="featured-item__info">
-            <span class="tag">#noticias</span>
-            <h3>Título del Gran Lanzamiento 2026</h3>
-        </div>
-    </a>
-    <a href="podcast.html" class="featured-item">
-        <img src="images/andar-2.jpg" alt="Articulo Destacado">
-        <div class="featured-item__info">
-            <span class="tag">#podcast</span>
-            <h3>Podcast : Andar</h3>
-        </div>
-    </a>
-    <a href="articulo3.html" class="featured-item">
-        <img src="imagen3.jpg" alt="Articulo Destacado">
-        <div class="featured-item__info">
-            <span class="tag">#articulos</span>
-            <h3>Las mejores ofertas de la semana</h3>
-        </div>
-    </a>
-</section>
 
-<div class="blog-layout">
-    </div>
+    <main class="main-container"> <!--Main-->
+        <section class="featured-grid"> <!--Grid de Hades 2-->
+            <a href="#" class="featured-item" title="La nueva reina de los roguelite">
+                <picture>
+                    <source srcset="images/hades2.webp" type="image/webp">
+                    <img src="images/hades2.webp" alt="Articulo Destacado" loading="lazy">
+                </picture>
+                <div class="featured-item__info">
+                    <span class="tag">#noticias</span>
+                    <h2>La nueva reina de los roguelite</h2>
+                </div>
+            </a>
+
+            <!--Grid Andar-->
+            <a href="podcast.html" class="featured-item" title="Ver podcast de Andar">
+                <picture>
+                    <source srcset="images/andar-2.jpg" type="image/webp">
+                    <img src="images/andar-2.jpg" alt="Articulo Destacado" loading="lazy">
+                </picture>
+                <div class="featured-item__info">
+                    <span class="tag">#noticias</span>
+                    <h2>Podcast Andar</h2>
+                </div>
+            </a>
+            <!--Grid Juegos del 2026-->
+            <a href="#" class="featured-item" title="Ver lanzamiento 2026">
+                <picture>
+                    <source srcset="images/juegos2026.webp" type="image/webp">
+                    <img src="images/juegos2026.webp" alt="Articulo Destacado" loading="lazy">
+                </picture>
+                <div class="featured-item__info">
+                    <span class="tag">#noticias</span>
+                    <h2>Título del Gran Lanzamiento 2026</h2>
+                </div>
+            </a>
+
+        </section>
 
         <div class="blog-layout">
-            
-            <section class="main-content">
-                <article class="news-card">
-                    <div class="news-card__container">
-                        <div class="news-card__image">
-                            <img src="images/annus-ovi.jpg" alt="Wild Growth">
-                        </div>
-                        <div class="news-card__content">
-                            <p class="news-card__subtitle">Raíces carcomidas <span class="news-card__badge-id">8</span></p>
-                            <h2 class="news-card__title">Análisis de Wild Growth</h2>
-                            <p class="news-card__excerpt">
-                                Un incremental game en el que tendremos que curar al pequeño grupo de héroes que pretende acabar con lo que sea que está atacando la base de su civilización.
-                            </p>
-                            <div class="news-card__footer">
-                                <span>12 ENERO 2026</span>
-                                <span>por JUAN SALAS</span>
+            <section class="main-content"> <!--Noticias-->
+                <h3 class="news-section__main-title">Últimas Noticias</h3>
+                <article class="news-card"> <!--Articulo de Reanimal-->
+                    <a href="#" class="news-card__link" title="Leer articulo de Reanimal">
+                        <div class="news-card__container">
+                            <div class="news-card__image">
+                                <img src="images/reanimal.webp" alt="Portada de Reanimal" loading="lazy">
+                            </div>
+                            <div class="news-card__content">
+                                <p class="news-card__subtitle">Vuelve el Terror </p>
+                                <h3 class="news-card__title"> Reanimal</h3>
+                                <p class="news-card__excerpt">Los principales detalles de Reanimal una aventura de
+                                    horror cooperativa.</p>
+                                <div class="news-card__footer">
+                                    <time datetime="2026-01-12">12 ENERO 2026</time>
+                                    <span>por ROMERO VARGAS</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </article>
+                <article class="news-card"> <!--Articulo de New World-->
+                    <a href="#" class="news-card__link" title="Leer artículo de New World">
+                        <div class="news-card__container">
+                            <div class="news-card__image">
+                                <img src="images/new world.jpg" alt="Portada de New World" loading="lazy">
+                            </div>
+                            <div class="news-card__content">
+                                <p class="news-card__subtitle">Cierre de servidores </p>
+                                <h3 class="news-card__title"> New World </h3>
+                                <p class="news-card__excerpt">Amazon retira New World de las tiendas y cerrará los
+                                    servidores en un año</p>
+                                <div class="news-card__footer">
+                                    <time datetime="2026-01-09">9 ENERO 2026</time>
+                                    <span>por MARTA GARLON</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="news-card"> <!--Articulo de Wild Growth-->
+                    <a href="#" class="news-card__link" title="Leer análisis completo de Wild Growth">
+                        <div class="news-card__container">
+                            <div class="news-card__image">
+                                <img src="images/wild-growth.jpg" alt="Portada de Wild Growth" loading="lazy">
+                            </div>
+                            <div class="news-card__content">
+                                <p class="news-card__subtitle">Raíces carcomidas </p>
+                                <h3 class="news-card__title"> Wild Growth</h3>
+                                <p class="news-card__excerpt">Un incremental game en el que tendremos que curar al
+                                    pequeño grupo de héroes...</p>
+                                <div class="news-card__footer">
+                                    <time datetime="2026-01-12">7 ENERO 2026</time>
+                                    <span>por JUAN Y MEDIO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </article>
 
+                <article class="news-card"> <!--Articulo de Skate Story-->
+                    <a href="#" class="news-card__link" title="Leer análisis completo de Skate Story">
+                        <div class="news-card__container">
+                            <div class="news-card__image">
+                                <img src="images/skate-story.jpg" alt="Portada de Skate Story" loading="lazy">
+                            </div>
+                            <div class="news-card__content">
+                                <p class="news-card__subtitle">Yo había matado la quinta luna </p>
+                                <h3 class="news-card__title"> Skate Story</h3>
+                                <p class="news-card__excerpt"> Sam Eng demuestra estar a la
+                                    altura de las altísimas expectativas y firma un juego único, profundo y
+                                    radicalmente inusual.</p>
+                                <div class="news-card__footer">
+                                    <time datetime="2026-01-12">3 ENERO 2026</time>
+                                    <span>por JUDIT FLORES</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
                 <div class="pagination">
-                    <a href="#" class="btn-read-more">Volver a Artículos</a>
+                    <a href="articulos.html" class="btn-read-more" title="Volver al listado de artículos">Volver a
+                        Artículos</a>
                 </div>
             </section>
 
             <aside class="sidebar-analysis">
                 <h2 class="analysis-header">#análisis</h2>
-                <!--Articulo de lumines arise-->
                 <article class="analysis-item-container">
                     <a href="articulo-lumines.html" class="news-card__link" title="Leer análisis: Sentidos aumentados">
                         <div class="analysis-item">
                             <picture>
-                                <source srcset="images/lumnies-3.webp" type="image/">
-                                <img src="images/lumines-3.jpg" alt="Analisis de Lumines Arise" loading="lazy">
+                                <source srcset="images/lumines-2.png" type="image/webp">
+                                <img src="images/lumines-2.png" alt="Analisis de Lumines Arise" loading="lazy">
                             </picture>
                             <div class="analysis-item__info">
                                 <h3 class="analysis-item__title">Sentidos aumentados</h3>
                             </div>
                         </div>
                     </a>
-                </article><!--Articulo de processor-->
+                </article>
                 <article class="analysis-item-container">
                     <a href="articulo-lumines.html" class="news-card__link"
                         title="Leer análisis: Un juego que lo tuvo todo">
@@ -151,11 +218,10 @@
                     </a>
                 </article> <!--Articulo de Death Howel-->
                 <article class="analysis-item-container">
-                    <a href="#" class="news-card__link"
-                        title="Leer análisis: Un soulslike con cartas">
+                    <a href="#" class="news-card__link" title="Leer análisis: Un soulslike con cartas">
                         <div class="analysis-item">
                             <picture>
-                                <source srcset="images/death.jpg" type="image/">
+                                <source srcset="images/death.jpg" type="image/jpg">
                                 <img src="images/death.jpg" alt="Analisis de Death Howel" loading="lazy">
                             </picture>
                             <div class="analysis-item__info">
@@ -164,13 +230,14 @@
                         </div>
                     </a>
                 </article>
-                <article class="analysis-item-container">
+                <article class="analysis-item-container"> <!--Articulo de Ninja Gaiden-->
                     <a href="articulo-lumines.html" class="news-card__link"
                         title="Leer análisis: Ninja Gaiden: Ragebound">
                         <div class="analysis-item">
                             <picture>
-                                <source srcset="images/ninja-gaiden.png" type="image/">
-                                <img src="images/ninja-gaiden.png" alt="Analisis de Ninja Gaiden: Ragebound" loading="lazy">
+                                <source srcset="images/ninja-gaiden.png" type="image/png">
+                                <img src="images/ninja-gaiden.png" alt="Analisis de Ninja Gaiden: Ragebound"
+                                    loading="lazy">
                             </picture>
                             <div class="analysis-item__info">
                                 <h3 class="analysis-item__title">Ninja Gaiden: Ragebound</h3>
@@ -178,12 +245,24 @@
                         </div>
                     </a>
                 </article>
+                <article class="analysis-item-container"> <!--Articulo de Death Stranding 2-->
+                    <a href="articulo-lumines.html" class="news-card__link" title="Leer análisis: Death Stranding 2">
+                        <div class="analysis-item">
+                            <picture>
+                                <source srcset="images/death-s.jpg" type="image/jpeg">
+                                <img src="images/death-s.jpg" alt="Analisis de Death Stranding 2" loading="lazy">
+                            </picture>
+                            <div class="analysis-item__info">
+                                <h3 class="analysis-item__title">Death Stranding 2</h3>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             </aside>
-
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer"> <!--Footer-->
         <a href="#" class="footer__link">Privacidad</a>
         <a href="#" class="footer__link">Terminos</a>
         <a href="#" class="footer__link">Ayuda</a>

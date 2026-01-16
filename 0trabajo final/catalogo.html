@@ -6,8 +6,7 @@
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png'
-        href='images/logo.png'>
+    <link rel='icon' type='image/png' href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +17,20 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"> <!--Header-->
         <div class="header__container">
             <div class="header__brand">
-                <img src="images/logo.png"
-                    alt="Logo" class="header__logo">
+                <img src="images/logo.png" alt="Logo" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href='index.html' class="activo">INICIO</a></li>
                     <li class="header__nav-item header__nav-item--dropdown">
-                        <a href="articulos.html">ARTICULOS</a>
+                        <a href="noticias.html">NOTICIAS</a>
                         <ul class="header__submenu">
                             <li><a href="podcast.html">PODCAST</a></li>
-                            <li><a href="noticias.html">NOTICIAS</a></li>
+                            <li><a href="articulos.html">ARTICULOS</a></li>
                         </ul>
                     </li>
                     </li>
@@ -41,20 +39,36 @@
                     <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="registro.html" class="header__user-icon">
-                            <img src="images/icono-usuario.png"
-                                alt="Usuario">
+                            <img src="images/icono-usuario.png" alt="Usuario">
                         </a></li>
+                    <!--Prueba de carrito de compra-->
+                    <li>
+                        <a href="#" class="header__cart-icon" id="cart-toggle">
+                            <img src="images/carrito.png" alt="Carrito">
+                            <span id="cart-count">0</span> </a>
+                        <div class="cart-dropdown" id="cart-dropdown">
+                            <h3>Tu Carrito</h3>
+                            <ul id="cart-items-list">
+                                <li class="empty-msg">El carrito está vacío</li>
+                            </ul>
+                            <div class="cart-total">
+                                Total: <span id="cart-total-price">0.00€</span>
+                            </div>
+                            <a href="checkout.html" class="btn-checkout">Finalizar Compra</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="hamburger">
+        <div class="hamburger"> <!--Menu Hamburguesa-->
             <div class="hamburger__layer hamburger__layer--top"></div>
             <div class="hamburger__layer hamburger__layer--mid"></div>
             <div class="hamburger__layer hamburger__layer--bottom"></div>
         </div>
-        <nav class="menuppal">
+        <nav class="menuppal"> <!--Submenu-->
             <ul>
                 <li><a href="index.html">INICIO</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
                 <li><a href="articulos.html">ARTICULOS</a></li>
                 <li><a href="catalogo.html">CATALOGO</a></li>
                 <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
@@ -84,20 +98,66 @@
             </article>
 
             <article class="post">
-                <img src="imagesfavicon.png/02-1536x1152.jpg" alt="revistas" class="post__image">
+                <img src="images/02-1536x1152.jpg" alt="revistas" class="post__image">
             </article>
 
             <article class="post__mockup">
-                <img src="imagesfavicon.png/Mockup-open-spreads-compo-1536x1152.jpg" alt="revistas" class="post__image">
+                <img src="images/Mockup-open-spreads-compo-1536x1152.jpg" alt="revistas" class="post__image">
             </article>
 
 
         </section>
         <article class="post">
-            <img src="imagesfavicon.png/07-1536x1152.jpg" alt="revistas" class="post__image">
+            <img src="images/07-1536x1152.jpg" alt="revistas" class="post__image">
         </article>
 
         <!--Catalogo para comprar y vinculado a la tienda (Investigar)-->
+        <section class="shop">
+        <h2 class="shop__title">Catálogo de Revistas</h2>
+        <div class="product-grid">
+            
+            <article class="product-card">
+                <div class="product-card__image">
+                    <img src="images/revista1.jpg" alt="Catabasis Vol 1">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-name">Catabasis Vol. 1</h3>
+                    <p class="product-price">15.00€</p>
+                    <button class="btn-add-cart" data-id="1" data-name="Catabasis Vol. 1" data-price="15.00">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__image">
+                    <img src="images/revista2.jpg" alt="Catabasis Vol 2">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-name">Catabasis Vol. 2</h3>
+                    <p class="product-price">15.00€</p>
+                    <button class="btn-add-cart" data-id="2" data-name="Catabasis Vol. 2" data-price="15.00">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__image">
+                    <img src="images/pack-especial.jpg" alt="Pack Especial">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-name">Pack Coleccionista</h3>
+                    <p class="product-price">40.00€</p>
+                    <button class="btn-add-cart" data-id="3" data-name="Pack Coleccionista" data-price="40.00">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
     </main>
 
     <footer class="footer">

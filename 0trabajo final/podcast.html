@@ -6,8 +6,7 @@
     <meta http-equiv='x-UA-Compatible' content='IE=edge'>
     <title>Catabasis Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png'
-        href='images/logo.png'>
+    <link rel='icon' type='image/png' href='images/logo.png'>
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,108 +17,97 @@
 </head>
 
 <body>
-    <!--Header-->
-    <header class="header">
+    <header class="header"> <!--Header-->
         <div class="header__container">
             <div class="header__brand">
-                <img src="images/logo.png" alt="Logo Catabasis Games" class="header__logo">
+                <img src="images/logo.png" alt="Logo" class="header__logo">
                 <h1 class="header__title">CATABASIS GAMES</h1>
             </div>
-
-            <nav class="header__nav" title="Navegación principal">
+            <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li>
-                        <a href="index.html" class="activo" title="Ir a la página de inicio">INICIO</a>
-                    </li>
-
+                    <li><a href='index.html' class="activo">INICIO</a></li>
                     <li class="header__nav-item header__nav-item--dropdown">
-                        <a href="articulos.html" title="Ver todos los artículos">ARTÍCULOS</a>
-                        <ul class="header__submenu"> <!--Submenu-->
-                            <li><a href="podcast.html" title="Escuchar nuestros podcasts">PODCAST</a></li>
-                            <li><a href="noticias.html" title="Leer últimas noticias">NOTICIAS</a></li>
+                        <a href="noticias.html">NOTICIAS</a>
+                        <ul class="header__submenu">
+                            <li><a href="podcast.html">PODCAST</a></li>
+                            <li><a href="articulos.html">ARTICULOS</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="catalogo.html" title="Consultar catálogo de juegos">CATÁLOGO</a></li>
-                    <li><a href="sobre_nosotros.html" title="Conocer al equipo">SOBRE NOSOTROS</a></li>
-                    <li><a href="contacto.html" title="Formulario de contacto">CONTACTO</a></li>
 
-                    <li>
-                        <a href="registro.html" class="header__user-icon" title="Acceder a mi perfil de usuario">
-                            <picture>
-                                <source srcset="images/icono-usuario.png" type="image/webp">
-                                <img src="images/icono-usuario.png" alt="Perfil de Usuario" loading="lazy">
-                            </picture>
-                        </a>
-                    </li>
+                    <li><a href="catalogo.html">CATALOGO</a></li>
+                    <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="registro.html" class="header__user-icon">
+                            <img src="images/icono-usuario.png" alt="Usuario">
+                        </a></li>
                 </ul>
             </nav>
         </div>
-        <!--Hamburguesa-->
-        <button class="hamburger" title="Abrir menú móvil">
-            <span class="hamburger__layer hamburger__layer--top"></span>
-            <span class="hamburger__layer hamburger__layer--mid"></span>
-            <span class="hamburger__layer hamburger__layer--bottom"></span>
-        </button>
-
-        <nav class="menuppal" title="Menú lateral móvil">
+        <div class="hamburger"> <!--Menu Hamburguesa-->
+            <div class="hamburger__layer hamburger__layer--top"></div>
+            <div class="hamburger__layer hamburger__layer--mid"></div>
+            <div class="hamburger__layer hamburger__layer--bottom"></div>
+        </div>
+        <nav class="menuppal"> <!--Submenu-->
             <ul>
-                <li><a href="index.html" title="Ir a la página de inicio">INICIO</a></li>
-                <li><a href="articulos.html" title="Ver todos los artículos">ARTÍCULOS</a></li>
-                <li><a href="catalogo.html" title="Consultar catálogo de juegos">CATÁLOGO</a></li>
-                <li><a href="sobre_nosotros.html" title="Conocer al equipo">SOBRE NOSOTROS</a></li>
-                <li><a href="contacto.html" title="Formulario de contacto">CONTACTO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="articulos.html">ARTICULOS</a></li>
+                <li><a href="catalogo.html">CATALOGO</a></li>
+                <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-parallax">
-        <main class="main-parallax">
-            <section class="parallax-section-podcast section-4" title="Fondo artístico del podcast Andar">
-                <h2 class="parallax-tittle-podcast">Podcast Andar</h2>
-            </section>
 
-            <section class="article-parallax-container">
-                <div class="article-content-inner">
-                    <article class="article-text-block">
-                        <p>
-                            Como cada miércoles, aquí va un nuevo episodio de Andar, el paseocast en el que Marina
-                            González
-                            y Jordi de Paco, de Deconstructeam, exploran la creatividad y los videojuegos charlando
-                            mientras pasean por Valencia.
-                        </p>
-                        <p>
-                            En el episodio de hoy, pasean mientras hablan sobre cómo comunicar videojuegos sin caer en
-                            jergas
-                            demasiado específicas para llegar a la mayor cantidad de gente posible.
-                        </p>
-                    </article>
+        <section class="parallax-section-podcast section-4" title="Fondo artístico del podcast Andar">
+            <h2 class="parallax-tittle-podcast">Podcast Andar</h2>
+        </section>
 
-                    <section class="multimedia-block">
-                        <h2 class="parallax-tittle-andar">Podcast Andar desde Spotify</h2>
-                        <iframe data-testid="embed-iframe" style="border-radius:12px"
-                            src="https://open.spotify.com/embed/episode/1sqeEmerwZ8zJExmwdFcB8?utm_source=generator"
-                            width="100%" height="352" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </section>
+        <section class="article-parallax-container">
+            <div class="article-content-inner">
+                <article class="article-text-block">
+                    <p>
+                        Como cada miércoles, aquí va un nuevo episodio de Andar, el paseocast en el que Marina
+                        González
+                        y Jordi de Paco, de Deconstructeam, exploran la creatividad y los videojuegos charlando
+                        mientras pasean por Valencia.
+                    </p>
+                    <p>
+                        En el episodio de hoy, pasean mientras hablan sobre cómo comunicar videojuegos sin caer en
+                        jergas
+                        demasiado específicas para llegar a la mayor cantidad de gente posible.
+                    </p>
+                </article>
 
-                    <article class="article-text-block">
-                        <p>
-                            Os recomendamos suscribiros al podcast en plataformas como Spotify o Apple Podcasts.
-                            También podéis añadirlo con el enlace RSS a vuestro reproductor favorito.
-                        </p>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <a href="#" class="footer__link">Privacidad</a>
-            <a href="#" class="footer__link">Terminos</a>
-            <a href="#" class="footer__link">Ayuda</a>
-            <a href="#" class="footer__link">Redes Sociales</a>
-            <p class="footer__copyright">&copy; 2026 Catabasis Games Web</p>
-        </footer>
+                <section class="multimedia-block">
+                    <h2 class="parallax-tittle-andar">Podcast Andar desde Spotify</h2>
+                    <iframe src="https://open.spotify.com/embed/episode/1sqeEmerwZ8zJExmwdFcB8" height="352"
+                        class="iframe-spotify" title="Reproductor de Podcast Andar - Episodio sobre comunicación"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                    </iframe>
+                </section>
+
+                <article class="article-text-block">
+                    <p>
+                        Os recomendamos suscribiros al podcast en plataformas como Spotify o Apple Podcasts.
+                        También podéis añadirlo con el enlace RSS a vuestro reproductor favorito.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#" class="footer__link">Privacidad</a>
+        <a href="#" class="footer__link">Terminos</a>
+        <a href="#" class="footer__link">Ayuda</a>
+        <a href="#" class="footer__link">Redes Sociales</a>
+        <p class="footer__copyright">&copy; 2026 Catabasis Games Web</p>
+    </footer>
 </body>
 
 </html>
