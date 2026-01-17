@@ -33,13 +33,13 @@
                             <li><a href="articulos.html">ARTICULOS</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="registro.html" class="header__user-icon">
                             <img src="images/icono-usuario.png" alt="Usuario">
                         </a></li>
-                    
+
                 </ul>
             </nav>
         </div>
@@ -59,15 +59,17 @@
         </nav>
     </header>
     <main class="main">
-
         <section class="form-register"> <!--Iniciar Sesión-->
             <h2 class="header__tittle--h4">Iniciar Sesión</h2>
-            <h3>Correo Electronico</h3>
-            <input class="controls" type="email" name="email" id="email" placeholder="Enter your email address">
-            <h4>Contraseña</h4>
-            <input class="controls" type="password" name="password" id="password" placeholder="Enter your password">
-            <p>¿No tienes cuenta? </p>
-            <p class="controls__link"><a href="iniciar_sesion.html">Iniciar Sesión</a></p>
+
+            <label for="email">Correo Electronico</label>
+            <input class="controls" type="email" name="email" id="email" placeholder="Introduce tu correo electrónico">
+
+            <label for="password">Contraseña</label>
+            <input class="controls" type="password" name="password" id="password" placeholder="Introduce tu contraseña">
+
+            <p>¿No tienes cuenta? <a class="controls__link" href="registro.html">Regístrate aquí</a></p>
+
             <button class="bottons">Enviar</button>
         </section>
     </main>
