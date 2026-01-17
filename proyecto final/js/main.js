@@ -1,18 +1,17 @@
 (() => {
     "use strict";
 
+    /* --- 1. LÓGICA DEL MENÚ HAMBURGUESA --- */
     const hamburger = document.querySelector('.hamburger');
     const menuPpal = document.querySelector('.menuppal');
     const body = document.body;
 
-    let isMenuOpen = false; // JS - Variables: Nomenclatura booleana
+    let isMenuOpen = false; 
 
     const toggleMenuHandler = (event) => {
         if (event) event.preventDefault();
-        
         isMenuOpen = !isMenuOpen;
 
-        // Gestión de clases CSS para activar animaciones
         hamburger.classList.toggle('is-active');
         menuPpal.classList.toggle('is_active');
         body.classList.toggle('is-active'); 
@@ -22,61 +21,51 @@
         hamburger.addEventListener('click', toggleMenuHandler, false);
     }
 
-    /* --- Lógica del Carrusel (Añadir aquí si tienes sliderTrack) --- */
-    const track = document.getElementById('sliderTrack');
-    if (track) {
-        // Aquí iría el código del counter y btnNext/btnPrev 
-    }
 
-})();
+    /* --- 2. LÓGICA DEL CARRUSEL  --- */
+    
+    
+    const initCarousel = () => {
+        const track = document.getElementById('carouselTrack');
+        const items = document.querySelectorAll('.carousel-item');
+        const btnNext = document.getElementById('btnNext');
+        const btnPrev = document.getElementById('btnPrev');
 
-/*CARRUSEL*/
+        if (!track || items.length === 0) return;
 
+        let counter = 0;
+        const totalItems = items.length;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const track = document.getElementById('carouselTrack');
-    const items = document.querySelectorAll('.carousel-item');
-    const btnNext = document.getElementById('btnNext');
-    const btnPrev = document.getElementById('btnPrev');
+        const updateCarousel = () => {
+            track.style.transform = `translateX(-${counter * 100}%)`;
+        };
 
-    if (!track || items.length === 0) return; // Evita errores si el elemento no existe
+        if (btnNext) {
+            btnNext.addEventListener('click', () => {
+                counter = (counter + 1) % totalItems;
+                updateCarousel();
+            });
+        }
 
-    let counter = 0;
-    const totalItems = items.length;
+        if (btnPrev) {
+            btnPrev.addEventListener('click', () => {
+                counter = (counter - 1 + totalItems) % totalItems;
+                updateCarousel();
+            });
+        }
 
-    /**
-     * Función para actualizar el desplazamiento y la accesibilidad
-     */
-    const updateCarousel = () => {
+        // Auto-play seguro
+        let autoPlay = setInterval(() => {
+            if(btnNext) btnNext.click();
+        }, 5000);
+
+        const stopAutoPlay = () => clearInterval(autoPlay);
         
-        track.style.transform = `translateX(-${counter * 100}%)`;
-        
-        
-        btnNext.setAttribute('aria-expanded', 'true');
+        if(btnNext) btnNext.addEventListener('mouseenter', stopAutoPlay);
+        if(btnPrev) btnPrev.addEventListener('mouseenter', stopAutoPlay);
     };
 
-    
-    btnNext.addEventListener('click', () => {
-        counter = (counter + 1) % totalItems;
-        updateCarousel();
-    });
+    // Ejecutamos la inicialización
+    document.addEventListener('DOMContentLoaded', initCarousel);
 
-    btnPrev.addEventListener('click', () => {
-        counter = (counter - 1 + totalItems) % totalItems;
-        updateCarousel();
-    });
-
-    /* Control de intervalos
-     * Es buena práctica limpiar intervalos o permitir que el usuario los detenga.
-     */
-    let autoPlay = setInterval(() => {
-        btnNext.click();
-    }, 5000);
-
-    // Detener el auto-play cuando el usuario interactúa.
-    const stopAutoPlay = () => clearInterval(autoPlay);
-    btnNext.addEventListener('mouseenter', stopAutoPlay);
-    btnPrev.addEventListener('mouseenter', stopAutoPlay);
-});
-
-
+})();
