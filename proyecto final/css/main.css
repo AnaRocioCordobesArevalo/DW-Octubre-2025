@@ -41,6 +41,30 @@
     --boder-top: #ddd;
 }
 
+    /* FUENTES*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.share-tech-regular {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+}
+
+
+
+
 /* GLOBALES */
 html,
 body {
@@ -52,12 +76,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: var(--font-main);
+    font-family: "Work Sans";
     background-color: var(--bg-body);
     color: var(--text-dark);
     line-height: 1.6;
     
+    
 }
+
 
 /* Bloqueo de scroll para menú activo */
 body.is-active {
@@ -102,8 +128,10 @@ main {
 .header__title {
     margin: 0;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.0625rem;
+    font-family: 'Bebas Neue';
+    color: var(--bg-dark);
 }
 
 .header__nav-list {
@@ -799,13 +827,14 @@ main {
     letter-spacing: 0.25rem;
     margin: 0;
     text-shadow: 0 0.25rem 0.625rem var(--bg-dark);
+    
 }
 
 .parallax-tittle-reanimal {
     position: relative;
     z-index: 2;
     color: var(--secondary-red); 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Bebas Neue';
     font-size: 4rem; 
     font-weight: 700;
     letter-spacing: 0.25rem;
@@ -931,6 +960,7 @@ article img {
     font-weight: 700;
     letter-spacing: 4px;
     margin: 0;
+    font-family: "Share Tech" ;
 
 
 }
