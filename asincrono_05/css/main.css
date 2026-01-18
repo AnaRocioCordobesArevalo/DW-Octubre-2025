@@ -63,7 +63,7 @@ body{
     opacity: 1;
 }
 
-/* -- Media Queries -- */
+/* -- MEDIA QUERIES-- */
 
 @media (max-width: 1024px) {
     .main {
